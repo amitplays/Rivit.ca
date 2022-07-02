@@ -1,0 +1,564 @@
+#root,
+body {
+  /* background-color: #fce4cc; */
+  background-image: linear-gradient(rgba(245, 215, 188, 0.116), #f7e1cfb4);
+  height: 100%;
+}
+
+/* Safari horizontal Scroll issue */
+
+.scrolling-element {
+  overflow-x: scroll; /* Must be 'scroll' not 'auto' */
+  -webkit-overflow-scrolling: touch;
+}
+
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+/* Optional: show position indicator */
+::-webkit-scrollbar-thumb {
+  background-color: #ac5e00;
+  border-radius: 10px;
+  margin-top: 50px;
+
+  /* width: 0;  */
+  /* Remove scrollbar space */
+}
+::-webkit-scrollbar {
+  width: 6px;
+  background-color: #f1e4d42f;
+  margin-top: 50px;
+  border-radius: 10px;
+}
+
+.App {
+  text-align: center;
+  max-width: 78%;
+  display: block;
+  margin: auto;
+  font-family: "Nunito", sans-serif;
+}
+
+.App h1 {
+  font-family: "Playfair Display", serif;
+}
+
+.form-control:focus {
+  border-color: rgb(211, 131, 12) !important;
+  box-shadow: inset 1px 1px rgb(211, 131, 12), 0 0 8px rgb(211, 131, 12) !important;
+}
+
+.headerStyles {
+  text-align: center;
+  padding-top: 20px;
+  border-radius: 15px !important;
+}
+.headerStyles .navBarContainer {
+  max-width: 96%;
+  padding-left: 14px !important;
+  padding-right: 14px !important;
+}
+
+.navbar-expand-md .navbar-nav .nav-link {
+  padding-right: 1.5rem !important;
+  padding-left: 1.5rem !important;
+}
+
+.navBarStyles {
+  padding: 2px;
+  border-radius: 18px;
+  /* box-shadow: 5px 10px 16px #c2bdbd00; */
+  color: #310101;
+  /* margin: 20px 2.5% !important; */
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #310101 !important;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #ac5e00 !important;
+  transform: scale(1.1);
+  font-size: 16px;
+}
+
+.nav {
+  justify-content: space-evenly;
+}
+
+/* ContactUs Tabs */
+
+.ContactTabStyle {
+  margin: 35px;
+}
+
+.contactUsBody {
+  min-height: 100vh;
+}
+
+.empContactUsCard {
+  padding: 40px;
+  border-radius: 18px;
+  border-color: #1f1131;
+  /* background-color: #dee0e233; */
+  background-color: rgba(255, 255, 255, 0.911);
+  color: #331758;
+  min-height: 410px;
+  text-align: left !important;
+}
+
+/* overriding button styles on (selected) tabs */
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #fff !important;
+  background-color: rgb(211, 131, 12) !important;
+  border-radius: 10px !important;
+  width: 330px !important;
+  height: 65px !important;
+  font-size: 24px;
+  margin: 5px;
+}
+/* overriding button styles on tabs */
+.contactUsBody .nav-link {
+  /* width: 250px !important;
+  height: 50px !important;
+  color: rgb(211, 131, 12) !important; */
+  color: #fff !important;
+  background-color: rgba(207, 144, 48, 0.39) !important;
+  border-radius: 10px !important;
+  width: 330px !important;
+  height: 65px !important;
+  margin: 5px;
+}
+
+.formParent {
+  text-align: left;
+}
+
+.carouselStyles {
+  background-color: #c2bdbdd2;
+}
+
+.cardStyles {
+  padding: 10px;
+  border-radius: 18px;
+  /* background-color: #dee0e233; */
+  background-color: rgba(255, 255, 255, 0.349);
+  color: #000;
+  min-height: 380px;
+  text-align: left !important;
+}
+.homePageCardStyles {
+  padding: 40px;
+  border-radius: 18px;
+  /* background-color: #dee0e233; */
+  background-color: rgba(255, 255, 255, 0.349);
+  color: #000;
+  min-height: 100vh;
+  text-align: left !important;
+}
+
+.modal-content {
+  background-color: antiquewhite !important;
+  color: #000;
+  border-color: antiquewhite;
+  border-radius: 18px !important;
+}
+
+.cardStyles:hover {
+  /* box-shadow: 4px 10px 14px rgba(245, 184, 93, 0.521); */
+}
+
+.empContactUsCard:hover {
+  box-shadow: 4px 10px 14px #96949767;
+}
+
+.Illustration {
+  display: block;
+  margin: auto;
+  padding: 5px;
+}
+
+.fullWidthHomeCard {
+  max-width: 100%;
+  color: #000;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  background-color: transparent;
+  /* background-image: linear-gradient(orange, yellow); */
+}
+
+.fullWidthContactCard {
+  max-width: 100%;
+  width: 100%;
+}
+
+.carousel-caption {
+  position: initial !important;
+  color: #000 !important;
+}
+
+.carousel-inner img {
+  margin: auto;
+}
+
+.buttonWrapperCarousel {
+  width: 95%;
+  text-align: right;
+}
+
+.cardOneOfTwo {
+  /* max-width: 50%;
+  width: 50%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.329);
+  padding: 20px;
+}
+.cardTwoOfTwo {
+  /* max-width: 50%;
+  width: 50%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  color: #ddecd9;
+  background-image: url(./assets/cardImageStu.jpg);
+  background-size: cover;
+}
+
+.parentOfTwoCards,
+.parentOfOneCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  /* flex-wrap: wrap; */
+}
+
+.whoWeAre {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  margin-top: 30px;
+  /* flex-wrap: wrap; */
+  padding: 60px;
+  border-radius: 18px;
+  color: #000;
+  min-height: 780px;
+  text-align: left !important;
+}
+
+.CardImages {
+  max-width: 300px;
+  max-height: 350px;
+  display: block;
+}
+
+.CardImage {
+  max-width: 600px;
+  max-height: 350px;
+  display: block;
+  border-radius: 18px;
+}
+
+.cardHeading {
+  width: 100%;
+}
+
+.imageContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 380px;
+}
+
+.buttonGroup {
+  width: 100%;
+  margin: 15px;
+  text-align: right;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+}
+
+.faqBody {
+  margin-top: 30px;
+  min-height: 100vh;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #000 !important;
+  background-color: transparent !important;
+}
+.accordion-button:focus {
+  box-shadow: 0 0 0 0rem rgba(211, 131, 12, 0.363) !important;
+  border-radius: 10px !important;
+}
+
+.accordion-item,
+.accordion-button {
+  background-color: transparent !important;
+}
+
+.workshopsBody {
+  padding-bottom: 10px;
+}
+
+.fourCardRow {
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.fourCardStyle {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  border-radius: 18px;
+  width: 320px;
+  /* background-color: rgba(255, 255, 255, 0.541); */
+  background-color: rgba(255, 255, 255, 0.377);
+  color: #000;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.fourCardStyle:hover {
+  box-shadow: 4px 10px 14px rgba(245, 184, 93, 0.521);
+}
+
+.subsCardHeading {
+  padding: 10px;
+}
+
+.recruiterBody {
+  min-height: 100vh;
+}
+
+.recruiterBody .cardStylesRecruiter {
+  background-color: #331758;
+  color: rgb(221, 187, 34) !important;
+}
+
+.cardStylesRecruiter {
+  padding: 40px;
+  border: 1px solid rgb(221, 187, 34);
+  border-radius: 18px;
+  background-color: rgba(255, 255, 255, 0.911);
+  min-height: 400px;
+  text-align: left !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.bannerImage {
+  width: 100%;
+  background-size: contain;
+  text-align: center;
+  max-height: 350px;
+}
+
+.fullWidthFaqCard {
+  background-color: transparent;
+  min-height: none;
+}
+
+.fullWidthFaqCard:hover {
+  box-shadow: none;
+}
+
+/* overriding button styles on tabs */
+.faqBody .nav-link {
+  color: #fff !important;
+  background-color: rgba(207, 144, 48, 0.39) !important;
+  border-radius: 10px !important;
+  width: 330px !important;
+  height: 65px !important;
+  font-size: 24px;
+  margin: 5px;
+}
+
+.fullWidth-image-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.mainCarousel {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: left;
+}
+
+.headerStyles .bg-light {
+  background-color: rgba(235, 232, 232, 0) !important;
+}
+
+.footerCardStyles {
+  padding: 5% 12%;
+  border-radius: 18px;
+  max-width: 100%;
+  width: 100%;
+  background-color: #310101;
+  color: rgb(255, 255, 255);
+  min-height: 410px;
+  text-align: left !important;
+  margin: 30px 0px;
+}
+
+.footerCardStyles .list-group-item {
+  color: white;
+  background-color: #310101;
+}
+
+.footerLinks {
+  display: flex;
+  font-size: x-small;
+  justify-content: center;
+}
+
+.footerLinks .footerLinksFirstItem {
+  font-size: small;
+}
+
+.footerCardStyles .input-group > .form-control,
+.input-group > .form-select {
+  background-color: #310101;
+  max-width: 300px;
+  color: white;
+}
+.footerCardStyles .input-group-text {
+  background-color: #310101;
+  color: white;
+}
+.footerCardStyles ul li,
+.contactUsBody ul li {
+  display: inline;
+  padding-right: 15px;
+}
+
+.footerCardStyles ul,
+.contactUsBody ul {
+  padding-left: 4px;
+  font-size: small;
+}
+
+.footerCardStyles ul li :hover,
+.contactUsBody .parentOfOneCard ul li :hover {
+  transform: scale(1.4);
+}
+
+.navBarContainer .recruiterButton {
+  border-radius: 16px;
+  padding: 8px 25px;
+  background-color: #1e5da5;
+  border-color: #1e5da5;
+  font-family: "Lato", sans-serif;
+  letter-spacing: 5;
+}
+
+.navBarContainer .recruiterButton:hover {
+  font-weight: 700;
+}
+
+.navBarContainer span {
+  margin-top: "6.5px";
+  margin-left: "5px" !important;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+}
+
+.navBarContainer img {
+  padding: 0 6px;
+}
+
+.headingSubtext .alert-link {
+  color: #000;
+}
+
+.cardStyles .ctaButton {
+  max-width: 200px;
+  min-height: 45px;
+  background-color: #ac5e00;
+  border-color: #ac5e00;
+  border-radius: 8px;
+  margin-top: 40px;
+  color: white;
+  font-weight: 700;
+}
+
+.cardStyles .btn-warning:hover {
+  color: #000;
+  background-color: #ffae41;
+  border-color: #ffae41;
+}
+
+.cardStyles .btn-warning:focus {
+  color: #000;
+  background-color: #ffae41;
+  border-color: #ffae41;
+  box-shadow: 0 0 0 0.25rem rgb(217 164 6 / 50%);
+}
+
+/* STUDENT PORTAL JSX STYLES ------------------------------------------------------- */
+
+.loginSignup {
+  margin: 100px 10px;
+}
+
+/* overriding button styles on (selected) tabs in StudentPortal.jsx */
+.loginSignup .nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #fff !important;
+  background-color: rgb(211, 131, 12) !important;
+  border-radius: 10px !important;
+  width: 130px !important;
+  height: 100% !important;
+  font-size: 18px;
+  margin: 2px;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.loginSignup .nav-link {
+  color: #000;
+  text-align: left;
+}
+
+.imageWrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+.fullWidthButton {
+  width: 100%;
+}
+
+.emptyCol {
+  width: 10px;
+  flex-grow: 0 !important;
+}
+
+.cardFixedHeight {
+  height: 430px;
+}
