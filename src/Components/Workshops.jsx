@@ -2,7 +2,9 @@ import { Button, Badge, Alert, Col, Row } from "react-bootstrap";
 import React from "react";
 import Fade from "react-reveal/Slide";
 import workBanner from "../assets/workBanner.png";
-
+import customAppIcon from "../assets/rivitRing.png";
+import hcl from "../assets/HCL_Domino.png";
+import reviveLogo from "../assets/reviveLogo.png";
 export default function Workshops() {
   return (
     <div>
@@ -20,16 +22,16 @@ export default function Workshops() {
                       height: "100%",
                     }}
                   >
-                    <h1 style={{ textAlign: "left" }}>Bit Workshops</h1>
+                    <h1 style={{ textAlign: "left" }}>
+                      Notes Domino Migration Solutions
+                    </h1>
                     <h4 className="headingSubtext">
-                      Our events and workshops focus on software development
-                      concepts, experiential learning and skill-building. We
-                      offer programs for undergraduate and graduate students,
-                      from learning about possible career paths to preparing to
-                      apply for jobs and internships as a software developer.
+                      Rivit’s Industry Leading Solutions and Hardened Migration
+                      Practice will Help You Eliminate Notes Domino Once and For
+                      All.
                     </h4>
                     <Button variant="light" className="ctaButton">
-                      Find Workshops
+                      Connect with Us
                     </Button>
                   </div>
                 </Fade>
@@ -50,81 +52,78 @@ export default function Workshops() {
               </Col>
             </Row>
             {/* Second Row ------------------------------- */}
+            <div className="CustomCardRow">
+              <div className="CustomCard">
+                <Fade bottom>
+                  <div className="fourCardStyle cardFixedHeight">
+                    <h2 className="subsCardHeading">
+                      Notes Domino App Migrations
+                    </h2>
+                    <img
+                      height="38px"
+                      width="113px"
+                      alt="CustomApp"
+                      src={reviveLogo}
+                      className="CardImageIconHomePage"
+                    />
+                    <p>
+                      Notes Domino Migration Solutions. Rivit’s Industry Leading
+                      Solutions and Hardened Migration Practice will Help You
+                      Eliminate Notes Domino Once and For All.
+                    </p>
+
+                    <Button variant="success" href={"./certifications"}>
+                      Enroll Now
+                    </Button>
+                  </div>
+                </Fade>
+              </div>
+              {/* 2ndCard */}
+              <div className="CustomCard">
+                <Fade bottom>
+                  <div className="fourCardStyle cardFixedHeight">
+                    <h2 className="subsCardHeading">
+                      HCL Domino Support Services
+                    </h2>
+                    <img
+                      height="38px"
+                      width="216px"
+                      alt="CustomApp"
+                      src={hcl}
+                      className="CardImageIconHomePage"
+                    />
+                    <p>
+                      Bring Your Legacy HCL Domino Applications Up-to-Date With
+                      Your Evolving Business. HCL Nomad brings the power of HCL
+                      Domino applications beyond the desktop, directly to where
+                      your users need to be.
+                    </p>
+                    <Button variant="success">start Now</Button>
+                  </div>
+                </Fade>
+              </div>
+              <div className="CustomCard">
+                <Fade bottom>
+                  <div className="fourCardStyle cardFixedHeight">
+                    <h2 className="subsCardHeading">Custom App Development</h2>
+                    <img
+                      height="50px"
+                      width="50px"
+                      alt="CustomApp"
+                      src={customAppIcon}
+                      className="CardImageIconHomePage"
+                    />
+                    <p>
+                      Unique requirements sometimes call for a unique approach.
+                      We love to think outside the box!
+                    </p>
+                    <Button variant="success">Enroll Now</Button>
+                  </div>
+                </Fade>
+              </div>
+            </div>
           </div>
         </div>
-        <Row>
-          <Col>
-            {" "}
-            <Fade bottom>
-              <div className="fourCardStyle cardFixedHeight">
-                <h4 className="subsCardHeading">
-                  Developer Workshop{" "}
-                  <Badge pill bg="dark">
-                    Level 1
-                  </Badge>
-                </h4>
-                <p>
-                  This workshop would entail the basics of software development
-                  which is a must for every aspiring software developer. This
-                  includes students who are not specifically studying Computer
-                  Science and wants to understand how software development works
-                  and what are the essentials that one should know being a
-                  software developer.
-                </p>
-                <Button variant="success">Enroll Now</Button>
-              </div>
-            </Fade>
-          </Col>
-          <Col
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              flexGrow: 1,
-            }}
-            xs={6}
-          >
-            {" "}
-            <Fade bottom>
-              <div className="fourCardStyle cardFixedHeight">
-                <h4 className="subsCardHeading">
-                  Developer Workshop{" "}
-                  <Badge pill bg="dark">
-                    Level 2
-                  </Badge>
-                </h4>
-                <p>
-                  This workshop can be attended after level 1 and explains about
-                  the different programming languages , their approach and ways
-                  to study. This workshop will also help students to understand
-                  the different types of database and how application consumes
-                  database. This workshop will also help students understand
-                  security around software development.
-                </p>
-                <Button variant="success">Enroll Now</Button>
-              </div>
-            </Fade>
-          </Col>
-          <Col>
-            <Fade bottom>
-              <div className="fourCardStyle cardFixedHeight">
-                <h4 className="subsCardHeading">
-                  Applications Using React.js{" "}
-                  <Badge pill bg="dark">
-                    Level 3
-                  </Badge>
-                </h4>
-                <p>
-                  This workshop would combine the Level 1 and Level 2 workshops
-                  and will introduce students of how to start building realtime
-                  web-applications. This workshop can be divided into building a
-                  dynamic application that deal with realtime APIs and front end
-                  development using React.js.
-                </p>
-                <Button variant="success">Enroll Now</Button>
-              </div>
-            </Fade>
-          </Col>
-        </Row>
       </div>
       <Row
         style={{

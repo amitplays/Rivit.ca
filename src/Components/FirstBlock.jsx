@@ -2,9 +2,11 @@ import React from "react";
 import Slide from "react-reveal/Slide";
 import Fade from "react-reveal/Fade";
 import grow from "../assets/grow.png";
-import resume from "../assets/resume.png";
-import stu from "../assets/ofc.jpg";
-import code from "../assets/cardImageStu.jpg";
+import customAppIcon from "../assets/rivitRing.png";
+import hcl from "../assets/HCL_Domino.png";
+import reviveLogo from "../assets/reviveLogo.png";
+import migrateMe from "../assets/mm.png";
+import clients from "../assets/clients.png";
 
 import { Button, Badge, Row, Col } from "react-bootstrap";
 
@@ -25,17 +27,17 @@ export default function FirstBlock() {
                     height: "100%",
                   }}
                 >
-                  <h1>Learn the key skills to accelerate your career</h1>
+                  <h1>Enterprise Application Solutions</h1>
                   <h4>
-                    Our workshops are the pre-requists for aspiring Software
-                    Developer and Computer Programmer. <br />
-                  </h4>
-                  <h4>
-                    Understand the Software development process, lifecycle of
-                    software from the requirements to the maintenance.
+                    Helping you rapidly build and launch enterprise-grade,
+                    business, and customer-facing apps using low-code
+                    development. Witness immediate business value with 10x
+                    faster development. <br /> We follow the culture of constant
+                    learning and improvement to provide the best solutions to
+                    clients.
                   </h4>
                   <Button variant="light" className="ctaButton">
-                    Find Workshops
+                    Get Started
                   </Button>
                   <div>
                     <div style={{ marginTop: "45px" }}></div>
@@ -57,120 +59,197 @@ export default function FirstBlock() {
               </Fade>
             </Col>
           </Row>
+
+          <div className="CustomCardRow">
+            <div className="CustomCard">
+              <Fade bottom>
+                <div className="fourCardStyle cardFixedHeight">
+                  <h2 className="subsCardHeading">
+                    Notes Domino App Migrations
+                  </h2>
+                  <img
+                    height="38px"
+                    width="170px"
+                    alt="CustomApp"
+                    src={migrateMe}
+                    className="CardImageIconHomePage"
+                  />
+                  <p>
+                    Notes Domino Migration Solutions. Rivit’s Industry Leading
+                    Solutions and Hardened Migration Practice will Help You
+                    Eliminate Notes Domino Once and For All.
+                  </p>
+
+                  <Button variant="success" href={"./certifications"}>
+                    Enroll Now
+                  </Button>
+                </div>
+              </Fade>
+            </div>
+            {/* 2ndCard */}
+            <div className="CustomCard">
+              <Fade bottom>
+                <div className="fourCardStyle cardFixedHeight">
+                  <h2 className="subsCardHeading">
+                    HCL Domino Support Services
+                  </h2>
+                  <img
+                    height="38px"
+                    width="216px"
+                    alt="CustomApp"
+                    src={hcl}
+                    className="CardImageIconHomePage"
+                  />
+                  <p>
+                    Bring Your Legacy HCL Domino Applications Up-to-Date With
+                    Your Evolving Business. HCL Nomad brings the power of HCL
+                    Domino applications beyond the desktop, directly to where
+                    your users need to be.
+                  </p>
+                  <Button variant="success">start Now</Button>
+                </div>
+              </Fade>
+            </div>
+            <div className="CustomCard">
+              <Fade bottom>
+                <div className="fourCardStyle cardFixedHeight">
+                  <h2 className="subsCardHeading">Custom App Development</h2>
+                  <img
+                    height="50px"
+                    width="50px"
+                    alt="CustomApp"
+                    src={customAppIcon}
+                    className="CardImageIconHomePage"
+                  />
+                  <p>
+                    Unique requirements sometimes call for a unique approach. We
+                    love to think outside the box!
+                  </p>
+                  <Button variant="success">Enroll Now</Button>
+                </div>
+              </Fade>
+            </div>
+          </div>
         </div>
       </div>
-      {/* Second Row ------------------------------- */}
-      <Row>
-        {" "}
-        <Col>
-          {" "}
-          <Fade bottom>
-            <div className="fourCardStyle cardFixedHeight">
-              <h2 className="subsCardHeading">Become a Bit Master</h2>
-              <p>
-                Stand out from peers with BitMaster skill certifications to
-                build a strong technical profile. We’ve crafted our own
-                curriculum and designed innovative certifications to bring
-                high-demand skills to new developers. Get connected with top
-                employers from our wide recruiter network.
-              </p>
-              <Button variant="success" href={"./certifications"}>
-                Enroll Now
-              </Button>
+      <Fade bottom>
+        <div className="fullWidthHomeCard">
+          <h4
+            style={{
+              color: "#000",
+              display: "block",
+              alignSelf: "center",
+              padding: 5,
+            }}
+          >
+            Discover the X-Factor
+          </h4>
+          <h1
+            style={{
+              color: "#000",
+              display: "block",
+              alignSelf: "center",
+              padding: 20,
+            }}
+          >
+            Rivit by the Numbers
+          </h1>
+          <div className="CustomCardRow">
+            <div className="CustomCard">
+              <Fade left>
+                <div className="fourCardStyleNoBorder cardFixedHeightSM">
+                  <h1 className="subsCardHeading">120k</h1>
+                  <h3>Notes Domino App Migrations</h3>
+                </div>
+              </Fade>
             </div>
-          </Fade>
-        </Col>
-        <Col
+            <div className="CustomCard">
+              <Fade left>
+                <div className="fourCardStyleNoBorder cardFixedHeightSM">
+                  <h1 className="subsCardHeading">3500+</h1>
+                  <h3>Successful Migration of 3500+ Users</h3>
+                </div>
+              </Fade>
+            </div>
+            <div className="CustomCard">
+              <Fade right>
+                <div className="fourCardStyleNoBorder cardFixedHeightSM">
+                  <h1 className="subsCardHeading">10x</h1>
+                  <h3>Fast query searches</h3>
+                </div>
+              </Fade>
+            </div>
+            <div className="CustomCard">
+              <Fade right>
+                <div className="fourCardStyleNoBorder cardFixedHeightSM">
+                  <h1 className="subsCardHeading">210k</h1>
+                  <h3>Emails Migrated</h3>
+                </div>
+              </Fade>
+            </div>
+          </div>
+        </div>
+      </Fade>
+      {/* ---------------- Helping Our Customer Section  ---------------------- */}
+      <Fade bottom>
+        <div
+          className="fullWidthHomeCardX"
           style={{
-            display: "flex",
-            justifyContent: "center",
-            flexGrow: 1,
+            backgroundImage: "linear-gradient(#05213a, #05213aeb)",
           }}
-          xs={6}
         >
-          {" "}
-          <Fade bottom>
-            <div className="fourCardStyle cardFixedHeight">
-              <h2 className="subsCardHeading">Create your Bit Profile</h2>
-              <p>
-                With Bit Recruiter’s tech profile builder, you’ll have
-                everything you need to craft a professional profile that will
-                let your hard work speak for itself. Build An Effective And
-                Efficient technical profile and learn the key skills to
-                accelerate your career and Climb The Corporate Ladder.
-              </p>
-              <Button variant="success">start Now</Button>
+          <h1
+            style={{
+              color: "#fff",
+              display: "block",
+              alignSelf: "center",
+              padding: 20,
+            }}
+          >
+            Helping the Customer Succeed
+          </h1>
+          <img
+            src={clients}
+            height="auto"
+            alt="clients"
+            className="clientImage"
+          />
+        </div>
+      </Fade>
+      <Fade bottom>
+        <div className="">
+          <h1
+            style={{
+              color: "#000",
+              display: "block",
+              alignSelf: "center",
+              padding: 20,
+            }}
+          >
+            Riviting Insights
+          </h1>
+          <div className="CustomTwoCardRow">
+            <div className="CustomCard">
+              <Fade bottom>
+                <div className="fourCardStyleNoBorder cardFixedHeightSM">
+                  <h2 className="subsCardHeading">Understanding the problem</h2>
+                  <p>Is Low-Code/No-Code The Best Platform for You?</p>
+                  <Button variant="success">Read More</Button>
+                </div>
+              </Fade>
             </div>
-          </Fade>
-        </Col>
-        <Col>
-          <Fade bottom>
-            <div className="fourCardStyle cardFixedHeight">
-              <h2 className="subsCardHeading">Attend a Bit Workshop </h2>
-              <p>
-                Leverage our dedicated courses and workshops to learn the most
-                sought after technologies, frameworks and tools.
-                <br /> Our workshops are designed to help students make an
-                unforgettable impression on the leading technology and Design
-                employers.
-              </p>
-              <Button variant="success">Enroll Now</Button>
+            <div className="CustomCard">
+              <Fade bottom>
+                <div className="fourCardStyleNoBorder cardFixedHeightSM">
+                  <h2 className="subsCardHeading">A decade of Excellence</h2>
+                  <p>Rivit's Dcom application is Celebrating 10 Years !</p>
+                  <Button variant="success">Learn More</Button>
+                </div>
+              </Fade>
             </div>
-          </Fade>
-        </Col>
-      </Row>
-      {/* ---------------- What we Do ?  ---------------------- */}
-      <div className="whoWeAre">
-        <Row>
-          <Col>
-            <Slide bottom>
-              <div>{/* ILLUSTRATION GOES HERE */}</div>
-            </Slide>
-          </Col>
-          <Col xs={8}>
-            <h1 className="cardHeading">What we do ?</h1>
-            <p>
-              Leverage our dedicated courses and workshops to learn the most
-              sought after technologies, frameworks and tools.Our workshops are
-              designed to help students make an unforgettable impression on the
-              leading technology and Design employers.
-            </p>
-          </Col>
-        </Row>
-      </div>
-      {/* ---------------- Career Counsellor  ---------------------- */}
-      <Row>
-        <Col>
-          <Slide bottom>
-            <div
-              style={{
-                backgroundColor: "#fcecda",
-                // backgroundImage:"linear-gradient(rgb(65 0 0 / 82%), rgb(64 0 0))",
-              }}
-              className="cardStyles fullWidthHomeCard"
-            >
-              <h1 className="cardHeading">Career Cousellor</h1>
-              <p>
-                Leverage our dedicated courses and workshops to learn the most
-                sought after technologies, frameworks and tools.
-                <br /> Our workshops are designed to help students make an
-                unforgettable impression on the leading technology and Design
-                employers.
-              </p>
-              <div className="buttonWrapperCarousel">
-                <Button
-                  className="justify-content-end"
-                  variant="light"
-                  size="sm"
-                >
-                  Contact Now
-                </Button>
-              </div>
-              {/* <img src={speed} alt="speed" className="CardImages" /> */}
-            </div>
-          </Slide>
-        </Col>
-      </Row>
+          </div>
+        </div>
+      </Fade>
     </>
   );
 }

@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { Navbar, Nav, Container, Button, Modal } from "react-bootstrap";
 import ContactUs from "./ContactUs";
 import { Link } from "react-router-dom";
-import bBitLogo from "../assets/ObitLogo.png";
+import rivitLogo from "../assets/rivitLogo.png";
 import LoginSignup from "../StudentPortal/LoginSignup";
 
 export default function Header() {
@@ -29,9 +29,9 @@ export default function Header() {
           <Navbar.Brand href="/">
             <img
               alt="logo"
-              src={bBitLogo}
-              width="65"
-              height="25"
+              src={rivitLogo}
+              width="150"
+              height="60"
               className="logo d-inline-block"
             />
             {/* <span>BIT RECRUITER</span> */}
@@ -51,11 +51,11 @@ export default function Header() {
             <span
               href="/"
               style={{
-                color: "black",
-                fontSize: "23px",
+                color: "white",
+                fontSize: "25px",
               }}
             >
-              BIT CONSULTANT
+              Rivit Technology Partners
             </span>
           </Nav.Link>
 
@@ -76,7 +76,7 @@ export default function Header() {
                 FAQs
               </Nav.Link>
               <Nav.Link as={Link} to={"./workshops"} eventKey={3}>
-                Workshops
+                Migration Solutions
               </Nav.Link>
               <Nav.Link as={Link} to={"./certifications"} eventKey={4}>
                 Certifications

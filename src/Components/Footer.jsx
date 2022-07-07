@@ -24,11 +24,11 @@ export default function Footer() {
         <div className="footerCardStyles">
           <Row>
             <Col sm={6}>
-              <h3>BitConsultants</h3>
-              <p>Mentor for students, Recruiters for Employers</p>
+              <h3>Rivit Technology Partners</h3>
+              <p>Enterprise Application Solutions</p>
               <Form xs={2}>
                 <Form.Label htmlFor="inlineFormInputGroup" visuallyHidden>
-                  Username
+                  Email
                 </Form.Label>
                 <InputGroup className="mb-2">
                   <InputGroup.Text>@</InputGroup.Text>
@@ -43,11 +43,11 @@ export default function Footer() {
               <div>
                 <ListGroup variant="flush">
                   <ListGroup.Item className="footerLinksFirstItem">
-                    SHOP
+                    Services
                   </ListGroup.Item>
-                  <ListGroup.Item>Dapibus ac facilisis</ListGroup.Item>
-                  <ListGroup.Item>Morbi leo risus</ListGroup.Item>
-                  <ListGroup.Item>Porta ac consectetur</ListGroup.Item>
+                  <ListGroup.Item>Dcom</ListGroup.Item>
+                  <ListGroup.Item>Revive</ListGroup.Item>
+                  <ListGroup.Item>Custom App Development</ListGroup.Item>
                 </ListGroup>
               </div>
               <div>
@@ -55,9 +55,9 @@ export default function Footer() {
                   <ListGroup.Item className="footerLinksFirstItem">
                     ABOUT
                   </ListGroup.Item>
-                  <ListGroup.Item>Dapibus ac facilisis</ListGroup.Item>
-                  <ListGroup.Item>Morbi leo risus</ListGroup.Item>
-                  <ListGroup.Item>Porta ac consectetur</ListGroup.Item>
+                  <ListGroup.Item>About Us</ListGroup.Item>
+                  <ListGroup.Item>Our Team</ListGroup.Item>
+                  <ListGroup.Item>Our Clients</ListGroup.Item>
                 </ListGroup>
               </div>
               <div>
@@ -65,9 +65,9 @@ export default function Footer() {
                   <ListGroup.Item className="footerLinksFirstItem">
                     RESOURCES
                   </ListGroup.Item>
-                  <ListGroup.Item>Recruiter </ListGroup.Item>
-                  <ListGroup.Item>Resume Builder</ListGroup.Item>
-                  <ListGroup.Item>Career Counssellor</ListGroup.Item>
+                  <ListGroup.Item>App Analyzer</ListGroup.Item>
+                  <ListGroup.Item>HCL Domino</ListGroup.Item>
+                  <ListGroup.Item>HCL Volt</ListGroup.Item>
                 </ListGroup>
               </div>
             </Col>
@@ -75,7 +75,7 @@ export default function Footer() {
           <hr></hr>
           <Row>
             <p className="footerLinksFirstItem">
-              bitRecruiter ALL RIGHTS RESERVED
+              Rivit Technology Partners -ALL RIGHTS RESERVED
             </p>
           </Row>
           <Row>
