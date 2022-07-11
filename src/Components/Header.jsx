@@ -34,25 +34,21 @@ export default function Header() {
               height="60"
               className="logo d-inline-block"
             />
-            {/* <span>BIT RECRUITER</span> */}
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Nav.Link
-          // as={Link} to={"./recruiter"} eventKey={2}
+            style={{
+              color: "white",
+              fontSize: "18px",
+              display: "flex",
+              justifyContent: "center",
+            }}
           >
-            {/* <Button
-              size="sm"
-              className="recruiterButton"
-              onClick={() => setshow(true)}
-              // variant="primary-outline"
-            >
-              Download App
-            </Button> */}
             <span
               href="/"
               style={{
                 color: "white",
-                fontSize: "25px",
+                fontSize: "16px",
               }}
             >
               Rivit Technology Partners
@@ -64,12 +60,7 @@ export default function Header() {
             id="responsive-navbar-nav"
           >
             <Nav className="ml-auto">
-              <Nav.Link
-                // onClick={contactUs} `
-                as={Link}
-                to={"./ContactUs"}
-                eventKey={2}
-              >
+              <Nav.Link as={Link} to={"./ContactUs"} eventKey={2}>
                 Contact Us
               </Nav.Link>
               <Nav.Link as={Link} to={"./faqs"} eventKey={2}>

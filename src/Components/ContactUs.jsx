@@ -33,10 +33,10 @@ export default function ContactUs() {
                     }}
                   >
                     <h1>Contact Us</h1>
-                    <h3>
+                    <h5>
                       Learn about software development and it's basics. Connect
-                      with us and get our latest updates !
-                    </h3>
+                      with us and get our latest updates!
+                    </h5>
                     <div>
                       <div style={{ marginTop: "45px" }}>
                         <ul style={{ textAlign: "center", marginTop: "15px" }}>
@@ -95,13 +95,13 @@ export default function ContactUs() {
         </div>
         <Fade bottom>
           <Tabs
-            defaultActiveKey="Experienced"
+            defaultActiveKey="MigrationServices"
             id="uncontrolled-tab-example"
             className="mb-3 ContactTabStyle"
             variant="pills"
           >
             {/* -------- Student Tab ------- */}
-            <Tab eventKey="Experienced" title="Experienced">
+            <Tab eventKey="MigrationServices" title="Migration Services">
               <div className="parentOfOneCard">
                 <div className="cardStyles fullWidthContactCard">
                   <div
@@ -112,7 +112,7 @@ export default function ContactUs() {
                     }}
                   >
                     <div className="Illustration">
-                      <h3>Student Illustration</h3>
+                      <h3>Migration Illustration</h3>
                     </div>
                     <div className="formParent">
                       <StudentForm />
@@ -123,7 +123,7 @@ export default function ContactUs() {
             </Tab>
 
             {/* -------- Employer Tab ------- */}
-            <Tab eventKey="Freshers" title="Freshers">
+            <Tab eventKey="CustomApp" title="Custom App">
               <div className="parentOfOneCard">
                 <div className="empContactUsCard fullWidthContactCard">
                   <div
@@ -137,7 +137,7 @@ export default function ContactUs() {
                       <EmployerForm />
                     </div>
                     <div className="Illustration">
-                      <h3>Employer Illustration</h3>
+                      <h3>Custom App Illustration</h3>
                     </div>
                   </div>
                 </div>

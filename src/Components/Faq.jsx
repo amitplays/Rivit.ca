@@ -21,15 +21,16 @@ export default function Faq() {
                 <h1 style={{ textAlign: "left" }}>
                   Frequently Asked Questions
                 </h1>
-                <h4 className="headingSubtext">
-                  BitConsultants is an online platform that brings together the
-                  best of Software Industry Experts, Information Technology, and
-                  Development basics to help you master the programming skills
-                  of the future.
+                <h5 className="headingSubtext">
+                  Rivit Technology Partners specializes in all phases of the
+                  Application Lifecycle. Our successful practice ensures a
+                  structured methodology using industry-leading frameworks
+                  including SharePoint, Volt, and our own Revive solution for
+                  creating modern and open standard web and mobile applications.
                   <br />
                   Checkout the most frequently asked questions about
                   BitConsultants
-                </h4>
+                </h5>
               </div>
             </Fade>
           </Col>
@@ -51,13 +52,13 @@ export default function Faq() {
       </div>
       <Fade bottom>
         <Tabs
-          defaultActiveKey="Students"
+          defaultActiveKey="MigrationServices"
           id="uncontrolled-tab-example"
           className="mb-3 ContactTabStyle"
           variant="pills"
         >
           {/* -------- Student Tab ------- */}
-          <Tab eventKey="Students" title="Students">
+          <Tab eventKey="MigrationServices" title="Migration Services">
             <div className="cardStyles">
               <h1 style={{ padding: 40, textAlign: "left" }}>Certifications</h1>
               <Accordion flush>
@@ -257,7 +258,7 @@ export default function Faq() {
           </Tab>
 
           {/* -------- Employer Tab ------- */}
-          <Tab eventKey="Employers" title="Employers">
+          <Tab eventKey="CustomApp" title="Custom App">
             <div className="cardStyles">
               <h1 style={{ padding: 40, textAlign: "left" }}>
                 Resource Handler

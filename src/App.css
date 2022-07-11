@@ -43,7 +43,7 @@ html {
 }
 
 .App h1 {
-  font-family: "Playfair Display", serif;
+  /* font-family: "Playfair Display", serif; */
 }
 
 .form-control:focus {
@@ -68,8 +68,6 @@ html {
 .navBarStyles {
   padding: 2px;
   border-radius: 18px;
-  /* box-shadow: 5px 10px 16px #c2bdbd00; */
-  /* margin: 20px 2.5% !important; */
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -93,15 +91,14 @@ html {
 }
 
 .contactUsBody {
-  min-height: 100vh;
+  /* min-height: 100vh; */
 }
 
 .empContactUsCard {
   padding: 40px;
   border-radius: 18px;
   border-color: #1f1131;
-  /* background-color: #dee0e233; */
-  background-color: rgba(255, 255, 255, 0.911);
+  background-color: #fff;
   color: #331758;
   min-height: 410px;
   text-align: left !important;
@@ -170,7 +167,7 @@ html {
 }
 
 .empContactUsCard:hover {
-  box-shadow: 4px 10px 14px #96949767;
+  box-shadow: 5px 10px 16px #857f7f6b;
 }
 
 .Illustration {
@@ -188,9 +185,7 @@ html {
   flex-wrap: nowrap;
   justify-content: center;
   background-color: transparent;
-  margin: 60px 0px;
-
-  /* background-image: linear-gradient(orange, yellow); */
+  margin: 5px 0px;
 }
 
 .fullWidthHomeCardX {
@@ -350,22 +345,21 @@ html {
   box-shadow: 5px 10px 16px #857f7f6b;
 }
 .fourCardStyleNoBorder:hover {
-  text-transform: uppercase !important;
+  box-shadow: 3px 5px 8px #857f7f6b;
 }
 
 .fourCardStyleNoBorder {
-  padding: 20px;
+  padding: 0px 20px 20px 20px;
   display: flex;
   flex-direction: column;
   margin-bottom: 15px;
   margin-top: 15px;
   border-radius: 18px;
   width: 320px;
+  justify-content: center;
   /* background-color: rgba(255, 255, 255, 0.541); */
   background-color: rgb(255, 255, 255);
   color: #000;
-  padding-bottom: 20px;
-  padding-top: 20px;
   /* box-shadow: 5px 10px 16px #857f7f6b; */
 }
 
@@ -461,7 +455,12 @@ html {
 
 .footerCardStyles .list-group-item {
   color: white;
-  background-color: #05213a;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.footerCardStyles .list-group-item:hover {
+  text-decoration-line: underline;
 }
 
 .footerLinks {
@@ -622,6 +621,15 @@ html {
   align-self: center;
 }
 
+.CardImageBlog {
+  display: block;
+  align-self: center;
+  /* border-radius: 12px; */
+  box-shadow: 2px 3px 4px #857f7f6b;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
 .CustomCardRow {
   display: flex;
   justify-content: space-between;
@@ -641,6 +649,10 @@ html {
   max-width: 69%;
 }
 
+.CustomCard {
+  margin: 15px;
+}
+
 @media only screen and (max-width: 1150px) {
   .homepageCardCol,
   .homepageCardColLeft,
@@ -658,11 +670,24 @@ html {
   .CustomCardRow {
     justify-content: space-around;
   }
-  .CustomCard {
-    margin: 5px;
-  }
   .clientImage {
     max-width: 100%;
     padding: 5px;
   }
+}
+
+/* custom Css for just changing colors of button */
+
+.btnColor {
+  background-color: #1b578e !important;
+  border-color: #1b578e !important;
+}
+
+.btnColor:hover {
+  background-color: #fff !important;
+  color: #1b578e !important;
+}
+
+.logo {
+  padding-left: 0.5rem;
 }
