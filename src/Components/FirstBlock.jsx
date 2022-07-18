@@ -3,14 +3,15 @@ import Fade from "react-reveal/Fade";
 import grow from "../assets/grow.png";
 import customAppIcon from "../assets/rivitRing.png";
 import hcl from "../assets/HCL_Domino.png";
-import reviveLogo from "../assets/reviveLogo.png";
+import revive from "../assets/revive.png";
 import blogImg1 from "../assets/blogImg1.jpg";
 import blogImg2 from "../assets/blogImg2.png";
+import tik from "../assets/tik.png";
 import blogImg3 from "../assets/blogImg3.png";
 import migrateMe from "../assets/mm.png";
 import clients from "../assets/clients.png";
 
-import { Button, Badge, Row, Col } from "react-bootstrap";
+import { Button, ListGroup, Row, Col } from "react-bootstrap";
 
 export default function FirstBlock() {
   return (
@@ -18,8 +19,8 @@ export default function FirstBlock() {
       {/* First Row */}
       <div className="parentOfOneCard">
         <div className="cardStyles fullWidthHomeCard">
-          <Row style={{ paddingLeft: 15 }}>
-            <Col sm={7}>
+          <Row style={{ paddingLeft: 13, margin: "70px 0px" }}>
+            <Col sm={8}>
               <Fade left>
                 <div
                   style={{
@@ -47,7 +48,7 @@ export default function FirstBlock() {
                 </div>
               </Fade>
             </Col>
-            <Col sm={5}>
+            <Col sm={4}>
               <Fade right>
                 <div
                   style={{
@@ -86,7 +87,7 @@ export default function FirstBlock() {
                 </div>
               </Fade>
             </div>
-            {/* 2ndCard */}
+            {/* ------------------- 2ndCard -------------------*/}
             <div className="CustomCard">
               <Fade bottom>
                 <div className="fourCardStyle cardFixedHeight">
@@ -134,8 +135,146 @@ export default function FirstBlock() {
           </div>
         </div>
       </div>
+
+      {/* ---------------------Why Rivit ? -----------------------------------  */}
       <Fade bottom>
-        <div className="fullWidthHomeCard">
+        <Row
+          style={{
+            marginTop: 100,
+          }}
+        >
+          <Col sm={5}>
+            <div
+              className="CustomCard"
+              style={{
+                display: "flex",
+                justifyContent: "center",
+              }}
+            >
+              <Fade left>
+                <div
+                  style={{
+                    maxWidth: "400px",
+                  }}
+                >
+                  <img
+                    src={revive}
+                    alt="speed"
+                    style={{
+                      maxWidth: "100%",
+                      maxHeight: "100%",
+                      display: "block",
+                    }}
+                  />
+                </div>
+              </Fade>
+            </div>
+          </Col>
+          <Col sm={7}>
+            <div className="CustomCard me">
+              <Fade right>
+                <div
+                  className="fourCardStyleNoBorder cardStyles"
+                  style={{
+                    width: "100%",
+                    textAlign: "left",
+                  }}
+                >
+                  <h1 className="subsCardHeading">Why Rivit ?</h1>
+                  <p
+                    style={{
+                      maxWidth: "650px",
+                    }}
+                  >
+                    Revive is strategically compiled for the migration of
+                    complex Notes Domino applications.
+                    <br />
+                    <br />
+                    Revive's proprietary migration utilities collect and convert
+                    the views, forms, code, data, and security, to recreate a
+                    modern enterprise application free of the original platform.
+                  </p>
+                  <div className="mmListWrapper">
+                    <ListGroup variant="flush">
+                      <Fade right>
+                        <ListGroup.Item>
+                          <span>
+                            <img alt="icon" src={tik} className="mmTik" />
+                          </span>
+                          Comprehensive Migration Utilities
+                        </ListGroup.Item>
+                      </Fade>
+                      <Fade right>
+                        <ListGroup.Item>
+                          <span>
+                            <img alt="icon" src={tik} className="mmTik" />
+                          </span>
+                          Standardized Technology Stack
+                        </ListGroup.Item>
+                      </Fade>
+                      <Fade right>
+                        <ListGroup.Item>
+                          <span>
+                            <img alt="icon" src={tik} className="mmTik" />
+                          </span>
+                          Cloud & Mobile Ready
+                        </ListGroup.Item>
+                      </Fade>
+                      <Fade right>
+                        <ListGroup.Item>
+                          <span>
+                            <img alt="icon" src={tik} className="mmTik" />
+                          </span>
+                          Porta ac consectetur ac
+                        </ListGroup.Item>
+                      </Fade>
+                    </ListGroup>
+                  </div>
+                  <Button variant="light" className=" ctaButton">
+                    Get Started
+                  </Button>
+                </div>
+              </Fade>
+            </div>
+          </Col>
+        </Row>
+      </Fade>
+      {/* ---------------- Helping Our Customer Section  ---------------------- */}
+      <Fade bottom>
+        <div
+          className="fullWidthHomeCardX"
+          style={{
+            backgroundImage: "linear-gradient(#05213a, #05213aeb)",
+            marginTop: 100,
+          }}
+        >
+          <h1
+            style={{
+              color: "#fff",
+              display: "block",
+              alignSelf: "center",
+              padding: 20,
+            }}
+          >
+            Helping the Customer Succeed
+          </h1>
+          <img
+            src={clients}
+            height="auto"
+            alt="clients"
+            className="clientImage"
+          />
+        </div>
+      </Fade>
+      {/* Rivit By Numbers*/}
+
+      <Fade bottom>
+        <div
+          className="fullWidthHomeCard"
+          style={{
+            marginTop: 100,
+          }}
+        >
           <h1
             style={{
               color: "#000",
@@ -182,67 +321,6 @@ export default function FirstBlock() {
           </div>
         </div>
       </Fade>
-      {/* ---------------- Helping Our Customer Section  ---------------------- */}
-      <Fade bottom>
-        <div
-          className="fullWidthHomeCardX"
-          style={{
-            backgroundImage: "linear-gradient(#05213a, #05213aeb)",
-          }}
-        >
-          <h1
-            style={{
-              color: "#fff",
-              display: "block",
-              alignSelf: "center",
-              padding: 20,
-            }}
-          >
-            Helping the Customer Succeed
-          </h1>
-          <img
-            src={clients}
-            height="auto"
-            alt="clients"
-            className="clientImage"
-          />
-        </div>
-      </Fade>
-
-      {/* -------Why Rivit ?   */}
-      <Fade bottom>
-        <div
-          className="fullWidthHomeCard fourCardStyle"
-          style={{ margin: "150px 0px" }}
-        >
-          <h1
-            style={{
-              color: "#000",
-              display: "block",
-              alignSelf: "center",
-              padding: "0px 190px",
-            }}
-          >
-            Rivit creates engaging and intuitive applications for the modern
-            organization!
-          </h1>
-          <div
-            className="CustomCardRow"
-            style={{ color: "#000", textAlign: "left", padding: "0px 50px" }}
-          >
-            <h5>
-              Rivit Technology Partners specializes in all phases of the
-              Application Lifecycle. For over 20 years organizations have turned
-              to Rivit to build, modernize, and manage business-critical
-              applications. Our successful practice ensures a structured
-              methodology using industry-leading frameworks including
-              SharePoint, Volt, and our own Revive solution for creating modern
-              and open standard web and mobile applications.
-            </h5>
-          </div>
-        </div>
-      </Fade>
-
       {/* ------------------ Riviting Insights --------------------------------*/}
       <Fade bottom>
         <div className="f">

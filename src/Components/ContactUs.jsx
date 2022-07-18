@@ -19,79 +19,80 @@ export default function ContactUs() {
   return (
     <>
       <div className="contactUsBody">
-        <div className="parentOfOneCard">
-          <div className="cardStyles fullWidthHomeCard">
-            <Row>
-              <Col sm={7}>
-                <Fade left>
-                  <div
-                    style={{
-                      display: "flex",
-                      flexDirection: "column",
-                      justifyContent: "center",
-                      height: "100%",
-                    }}
-                  >
-                    <h1>Contact Us</h1>
-                    <h5>
-                      Learn about software development and it's basics. Connect
-                      with us and get our latest updates!
-                    </h5>
-                    <div>
-                      <div style={{ marginTop: "45px" }}>
-                        <ul style={{ textAlign: "center", marginTop: "15px" }}>
-                          <li>
-                            <a href="#">
-                              <img
-                                style={{
-                                  maxWidth: "45px",
-                                }}
-                                src={messIcon}
-                              />
-                            </a>
-                          </li>
-                          <li>
-                            <a href="#">
-                              <img
-                                style={{
-                                  maxWidth: "45px",
-                                }}
-                                src={instaIcon}
-                              />
-                            </a>
-                          </li>
-                          <li>
-                            <a href="#">
-                              <img
-                                style={{
-                                  maxWidth: "45px",
-                                }}
-                                src={fbIcon2}
-                              />
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
+        <div className="cardStyles fullWidthHomeCard">
+          <Row>
+            <Col sm={8}>
+              <Fade left>
+                <div
+                  style={{
+                    display: "flex",
+                    flexDirection: "column",
+                    justifyContent: "center",
+                    height: "100%",
+                  }}
+                >
+                  <h1>Contact Us</h1>
+                  <h5>
+                    Learn about software development and it's basics. Connect
+                    with us and get our latest updates!
+                  </h5>
+                  <div>
+                    <div style={{ marginTop: "45px" }}>
+                      <ul style={{ textAlign: "center", marginTop: "15px" }}>
+                        <li>
+                          <a href="#">
+                            <img
+                              alt="MessIcon"
+                              style={{
+                                maxWidth: "45px",
+                              }}
+                              src={messIcon}
+                            />
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img
+                              alt="instaIcon"
+                              style={{
+                                maxWidth: "45px",
+                              }}
+                              src={instaIcon}
+                            />
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img
+                              alt="fbIcon"
+                              style={{
+                                maxWidth: "45px",
+                              }}
+                              src={fbIcon2}
+                            />
+                          </a>
+                        </li>
+                      </ul>
                     </div>
                   </div>
-                </Fade>
-              </Col>
-              <Col sm={5}>
-                <Fade right>
-                  <div
-                    style={{
-                      display: "block",
-                      margin: "auto",
-                      maxWidth: "300px",
-                      paddingTop: "10px",
-                    }}
-                  >
-                    <img src={faq2} alt="speed" className="CardImages" />
-                  </div>
-                </Fade>
-              </Col>
-            </Row>
-          </div>
+                </div>
+              </Fade>
+            </Col>
+            <Col sm={4}>
+              <Fade right>
+                <div
+                  style={{
+                    display: "block",
+                    margin: "auto",
+                    maxWidth: "300px",
+                    paddingTop: "10px",
+                  }}
+                >
+                  <img src={faq2} alt="speed" className="CardImages" />
+                </div>
+              </Fade>
+            </Col>
+          </Row>
         </div>
         <Fade bottom>
           <Tabs
@@ -102,21 +103,21 @@ export default function ContactUs() {
           >
             {/* -------- Student Tab ------- */}
             <Tab eventKey="MigrationServices" title="Migration Services">
-              <div className="parentOfOneCard">
-                <div className="cardStyles fullWidthContactCard">
-                  <div
-                    style={{
-                      display: "flex",
-                      flexWrap: "wrap",
-                      justifyContent: "space-evenly",
-                    }}
-                  >
-                    <div className="Illustration">
-                      <h3>Migration Illustration</h3>
-                    </div>
-                    <div className="formParent">
-                      <StudentForm />
-                    </div>
+              <div className="cardStyles fullWidthContactCard">
+                <div
+                  style={{
+                    display: "flex",
+                    flexWrap: "wrap",
+                    justifyContent: "space-evenly",
+                  }}
+                >
+                  <div className="Illustration">
+                    <h1 style={{ padding: 40, textAlign: "left" }}>
+                      Migration
+                    </h1>
+                  </div>
+                  <div className="formParent">
+                    <StudentForm />
                   </div>
                 </div>
               </div>

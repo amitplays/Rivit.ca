@@ -90,10 +90,6 @@ html {
   margin: 35px;
 }
 
-.contactUsBody {
-  /* min-height: 100vh; */
-}
-
 .empContactUsCard {
   padding: 40px;
   border-radius: 18px;
@@ -117,11 +113,8 @@ html {
 }
 /* overriding button styles on tabs */
 .contactUsBody .nav-link {
-  /* width: 250px !important;
-  height: 50px !important;
-  color: #1b578e !important; */
   color: #fff !important;
-  background-color: rgba(207, 144, 48, 0.39) !important;
+  background-color: rgb(207, 143, 48) !important;
   border-radius: 10px !important;
   width: 330px !important;
   height: 65px !important;
@@ -248,7 +241,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 30px;
+  padding-top: 10px;
   /* flex-wrap: wrap; */
 }
 
@@ -266,8 +259,8 @@ html {
 }
 
 .CardImages {
-  max-width: 300px;
-  max-height: 350px;
+  max-width: 250px;
+  max-height: 290px;
   display: block;
 }
 
@@ -653,6 +646,10 @@ html {
   margin: 15px;
 }
 
+.me .fourCardStyleNoBorder:hover {
+  box-shadow: none;
+}
+
 @media only screen and (max-width: 1150px) {
   .homepageCardCol,
   .homepageCardColLeft,
@@ -690,4 +687,16 @@ html {
 
 .logo {
   padding-left: 0.5rem;
+}
+
+.mmListWrapper .list-group-item {
+  border: none;
+  padding-left: 0;
+}
+
+.mmTik{
+
+  max-width: 15px;
+  margin-right: 10px;
+
 }

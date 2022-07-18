@@ -70,7 +70,7 @@ export default function Header() {
                 Migration Solutions
               </Nav.Link>
               <Nav.Link as={Link} to={"./certifications"} eventKey={4}>
-                Certifications
+                Careers
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>

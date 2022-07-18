@@ -8,7 +8,7 @@ export default function Faq() {
     <div className="faqBody">
       <div className="cardStyles fullWidthHomeCard">
         <Row>
-          <Col sm={7}>
+          <Col sm={8}>
             <Fade left>
               <div
                 style={{
@@ -27,14 +27,11 @@ export default function Faq() {
                   structured methodology using industry-leading frameworks
                   including SharePoint, Volt, and our own Revive solution for
                   creating modern and open standard web and mobile applications.
-                  <br />
-                  Checkout the most frequently asked questions about
-                  BitConsultants
                 </h5>
               </div>
             </Fade>
           </Col>
-          <Col sm={5}>
+          <Col sm={4}>
             <Fade right>
               <div
                 style={{
