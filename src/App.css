@@ -112,14 +112,14 @@ html {
   margin: 5px;
 }
 /* overriding button styles on tabs */
-.contactUsBody .nav-link {
+/* .contactUsBody .nav-link {
   color: #fff !important;
   background-color: rgb(207, 143, 48) !important;
   border-radius: 10px !important;
   width: 330px !important;
   height: 65px !important;
   margin: 5px;
-}
+} */
 
 .formParent {
   text-align: left;
@@ -403,7 +403,8 @@ html {
 }
 
 /* overriding button styles on tabs */
-.faqBody .nav-link {
+.faqBody .nav-link,
+.contactUsBody .nav-link {
   color: #fff !important;
   background-color: rgba(207, 144, 48, 0.39) !important;
   border-radius: 10px !important;
@@ -650,6 +651,10 @@ html {
   box-shadow: none;
 }
 
+.headingFont {
+  font-size: 50px;
+}
+
 @media only screen and (max-width: 1150px) {
   .homepageCardCol,
   .homepageCardColLeft,
@@ -661,6 +666,10 @@ html {
   #root,
   body {
     height: 120vh;
+  }
+
+  .headingFont {
+    font-size: 34px;
   }
 
   /* Changing card Layout for phones */
@@ -694,9 +703,7 @@ html {
   padding-left: 0;
 }
 
-.mmTik{
-
+.mmTik {
   max-width: 15px;
   margin-right: 10px;
-
 }

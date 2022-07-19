@@ -174,20 +174,20 @@ export default function Workshops() {
                       width: "100%",
                     }}
                   >
-                    <h1 className="subsCardHeading">Migrate and Morderize</h1>
+                    <h1 className="subsCardHeading">Application Archiving</h1>
                     <p
                       style={{
                         maxWidth: "650px",
                       }}
                     >
-                      Revive is strategically compiled for the migration of
-                      complex Notes Domino applications.
+                      Dcom is an Enterprise Application Archiving solution that
+                      preserves access to legacy Domino application databases
+                      completely independent of HCL Notes Domino.
                       <br />
                       <br />
-                      Revive's proprietary migration utilities collect and
-                      convert the views, forms, code, data, and security, to
-                      recreate a modern enterprise application free of the
-                      original platform.
+                      Dcom transitions Domino applications to web-based XML
+                      archives, converts documents to pdf and maintains the
+                      original attachments.
                     </p>
                     <div className="mmListWrapper">
                       <ListGroup variant="flush">
@@ -196,7 +196,7 @@ export default function Workshops() {
                             <span>
                               <img alt="icon" src={tik} className="mmTik" />
                             </span>
-                            Comprehensive Migration Utilities
+                            Easy-to-Use for End-Users
                           </ListGroup.Item>
                         </Fade>
                         <Fade right>
@@ -204,7 +204,7 @@ export default function Workshops() {
                             <span>
                               <img alt="icon" src={tik} className="mmTik" />
                             </span>
-                            Standardized Technology Stack
+                            Simple Archiving Process
                           </ListGroup.Item>
                         </Fade>
                         <Fade right>
@@ -212,15 +212,7 @@ export default function Workshops() {
                             <span>
                               <img alt="icon" src={tik} className="mmTik" />
                             </span>
-                            Cloud & Mobile Ready
-                          </ListGroup.Item>
-                        </Fade>
-                        <Fade right>
-                          <ListGroup.Item>
-                            <span>
-                              <img alt="icon" src={tik} className="mmTik" />
-                            </span>
-                            Porta ac consectetur ac
+                            Full Security & Access Controls
                           </ListGroup.Item>
                         </Fade>
                       </ListGroup>
@@ -302,20 +294,20 @@ export default function Workshops() {
                         width: "100%",
                       }}
                     >
-                      <h1 className="subsCardHeading">Migrate and Morderize</h1>
+                      <h1 className="subsCardHeading">Migration Analysis</h1>
                       <p
                         style={{
                           maxWidth: "650px",
                         }}
                       >
-                        Revive is strategically compiled for the migration of
-                        complex Notes Domino applications.
+                        App|Analyzer is a no-cost solution that analyzes Notes
+                        Domino applications to identify potential outcomes for
+                        each application.
                         <br />
                         <br />
-                        Revive's proprietary migration utilities collect and
-                        convert the views, forms, code, data, and security, to
-                        recreate a modern enterprise application free of the
-                        original platform.
+                        Only with a complete understanding of every application
+                        in the Notes environment can an organization plan and
+                        execute a complete migration from the platform.
                       </p>
                       <div className="mmListWrapper">
                         <ListGroup variant="flush">
@@ -324,7 +316,7 @@ export default function Workshops() {
                               <span>
                                 <img alt="icon" src={tik} className="mmTik" />
                               </span>
-                              Comprehensive Migration Utilities
+                              Application Usage Statistics
                             </ListGroup.Item>
                           </Fade>
                           <Fade right>
@@ -332,7 +324,7 @@ export default function Workshops() {
                               <span>
                                 <img alt="icon" src={tik} className="mmTik" />
                               </span>
-                              Standardized Technology Stack
+                              Application Complexity Analysis
                             </ListGroup.Item>
                           </Fade>
                           <Fade right>
@@ -340,7 +332,7 @@ export default function Workshops() {
                               <span>
                                 <img alt="icon" src={tik} className="mmTik" />
                               </span>
-                              Cloud & Mobile Ready
+                              Migration Decision Support
                             </ListGroup.Item>
                           </Fade>
                           <Fade right>

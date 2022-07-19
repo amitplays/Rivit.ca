@@ -1,6 +1,5 @@
 {
-  "homepage": "https://amitplays.github.io/techPods/",
-  "name": "tech_pods",
+  "name": "rivit",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

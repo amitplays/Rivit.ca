@@ -8,7 +8,7 @@ import tb from "../assets/TeraBit.png";
 import faq from "../assets/suitcase.png";
 import tik from "../assets/tik.png";
 import frontEnd from "../assets/frontEnd.png";
-export default function Certifications() {
+export default function Careers() {
   return (
     <div>
       <div className="workshopsBody">

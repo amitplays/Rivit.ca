@@ -10,6 +10,8 @@ import {
 } from "react-bootstrap";
 import { StudentForm, EmployerForm } from "./StudentForm";
 import faq2 from "../assets/contact.png";
+import cusApp from "../assets/cusApp.png";
+import migration from "../assets/migration.png";
 import Fade from "react-reveal/Slide";
 import fbIcon2 from "../assets/fbLogo.png";
 import messIcon from "../assets/mesIcon2.png";
@@ -101,7 +103,7 @@ export default function ContactUs() {
             className="mb-3 ContactTabStyle"
             variant="pills"
           >
-            {/* -------- Student Tab ------- */}
+            {/* -------- Migration Tab ------- */}
             <Tab eventKey="MigrationServices" title="Migration Services">
               <div className="cardStyles fullWidthContactCard">
                 <div
@@ -112,9 +114,16 @@ export default function ContactUs() {
                   }}
                 >
                   <div className="Illustration">
-                    <h1 style={{ padding: 40, textAlign: "left" }}>
-                      Migration
-                    </h1>
+                    <div
+                      style={{
+                        display: "block",
+                        margin: "auto",
+                        maxWidth: "300px",
+                        paddingTop: "10px",
+                      }}
+                    >
+                      <img src={migration} alt="speed" className="CardImages" />
+                    </div>
                   </div>
                   <div className="formParent">
                     <StudentForm />
@@ -123,7 +132,7 @@ export default function ContactUs() {
               </div>
             </Tab>
 
-            {/* -------- Employer Tab ------- */}
+            {/* -------- Custom App Tab ------- */}
             <Tab eventKey="CustomApp" title="Custom App">
               <div className="parentOfOneCard">
                 <div className="empContactUsCard fullWidthContactCard">
@@ -138,7 +147,16 @@ export default function ContactUs() {
                       <EmployerForm />
                     </div>
                     <div className="Illustration">
-                      <h3>Custom App Illustration</h3>
+                      <div
+                        style={{
+                          display: "block",
+                          margin: "auto",
+                          maxWidth: "300px",
+                          paddingTop: "10px",
+                        }}
+                      >
+                        <img src={cusApp} alt="speed" className="CardImages" />
+                      </div>
                     </div>
                   </div>
                 </div>

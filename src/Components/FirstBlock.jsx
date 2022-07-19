@@ -19,7 +19,7 @@ export default function FirstBlock() {
       {/* First Row */}
       <div className="parentOfOneCard">
         <div className="cardStyles fullWidthHomeCard">
-          <Row style={{ paddingLeft: 13, margin: "70px 0px" }}>
+          <Row style={{ paddingLeft: 13, margin: "80px 0px" }}>
             <Col sm={8}>
               <Fade left>
                 <div
@@ -30,7 +30,9 @@ export default function FirstBlock() {
                     height: "100%",
                   }}
                 >
-                  <h1>Enterprise Application Solutions</h1>
+                  <h1 className="headingFont">
+                    Enterprise Application Solutions
+                  </h1>
                   <h5>
                     Helping you rapidly build and launch enterprise-grade,
                     business, and customer-facing apps using low-code
@@ -140,7 +142,7 @@ export default function FirstBlock() {
       <Fade bottom>
         <Row
           style={{
-            marginTop: 100,
+            marginTop: 150,
           }}
         >
           <Col sm={5}>
@@ -180,7 +182,7 @@ export default function FirstBlock() {
                     textAlign: "left",
                   }}
                 >
-                  <h1 className="subsCardHeading">Why Rivit ?</h1>
+                  <h1 className="subsCardHeading headingFont">Why Rivit ?</h1>
                   <p
                     style={{
                       maxWidth: "650px",
@@ -245,15 +247,16 @@ export default function FirstBlock() {
           className="fullWidthHomeCardX"
           style={{
             backgroundImage: "linear-gradient(#05213a, #05213aeb)",
-            marginTop: 100,
+            marginTop: 150,
           }}
         >
           <h1
+            className="headingFont"
             style={{
               color: "#fff",
               display: "block",
               alignSelf: "center",
-              padding: 20,
+              padding: 25,
             }}
           >
             Helping the Customer Succeed
@@ -272,10 +275,11 @@ export default function FirstBlock() {
         <div
           className="fullWidthHomeCard"
           style={{
-            marginTop: 100,
+            marginTop: 150,
           }}
         >
           <h1
+            className="headingFont"
             style={{
               color: "#000",
               display: "block",
@@ -323,8 +327,14 @@ export default function FirstBlock() {
       </Fade>
       {/* ------------------ Riviting Insights --------------------------------*/}
       <Fade bottom>
-        <div className="f">
+        <div
+          className="fullWidthHomeCard"
+          style={{
+            marginTop: 150,
+          }}
+        >
           <h1
+            className="headingFont"
             style={{
               color: "#000",
               display: "block",

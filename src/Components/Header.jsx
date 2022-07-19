@@ -60,16 +60,19 @@ export default function Header() {
             id="responsive-navbar-nav"
           >
             <Nav className="ml-auto">
-              <Nav.Link as={Link} to={"./ContactUs"} eventKey={2}>
-                Contact Us
+              <Nav.Link as={Link} to={"./workshops"} eventKey={3}>
+                Migration Solutions
               </Nav.Link>
               <Nav.Link as={Link} to={"./faqs"} eventKey={2}>
                 FAQs
               </Nav.Link>
-              <Nav.Link as={Link} to={"./workshops"} eventKey={3}>
-                Migration Solutions
+              <Nav.Link as={Link} to={"./rivitingInsights"} eventKey={4}>
+                Riviting Insights
               </Nav.Link>
-              <Nav.Link as={Link} to={"./certifications"} eventKey={4}>
+              <Nav.Link as={Link} to={"./ContactUs"} eventKey={2}>
+                Contact Us
+              </Nav.Link>
+              <Nav.Link as={Link} to={"./careers"} eventKey={4}>
                 Careers
               </Nav.Link>
             </Nav>

@@ -6,16 +6,16 @@ import FirstBlock from "./Components/FirstBlock";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import ContactUs from "./Components/ContactUs";
 import Faq from "./Components/Faq";
-import Recruiter from "./Components/Recruiter";
+import RivitingInsights from "./Components/RivitingInsights";
 import Workshops from "./Components/Workshops";
-import Certifications from "./Components/Certifications";
+import Careers from "./Components/Careers";
 import StudentPortal from "./StudentPortal/StudentPortal";
 import LoginSignup from "./StudentPortal/LoginSignup";
 import Footer from "./Components/Footer";
 
 function App() {
   return (
-    <Router  basename={process.env.PUBLIC_URL} >
+    <Router basename={process.env.PUBLIC_URL}>
       <div className="App">
         <Slide bottom>
           <Header />
@@ -24,10 +24,9 @@ function App() {
           <Route path="/" exact component={FirstBlock}></Route>
           <Route path="/contactUs" component={ContactUs}></Route>
           <Route path="/faqs" component={Faq}></Route>
-          <Route path="/recruiter" component={Recruiter}></Route>
+          <Route path="/rivitingInsights" component={RivitingInsights}></Route>
           <Route path="/workshops" component={Workshops}></Route>
-          <Route path="/certifications" component={Certifications}></Route>
-
+          <Route path="/careers" component={Careers}></Route>
         </Switch>
         <Slide bottom>
           <Footer />
