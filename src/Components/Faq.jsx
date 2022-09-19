@@ -57,12 +57,11 @@ export default function Faq() {
           {/* -------- Student Tab ------- */}
           <Tab eventKey="MigrationServices" title="Migration Services">
             <div className="cardStyles">
-              <h1 style={{ padding: 40, textAlign: "left" }}>Certifications</h1>
+              <h1 style={{ padding: 40, textAlign: "left" }}>Migration</h1>
               <Accordion flush>
                 <Accordion.Item eventKey="0">
                   <Accordion.Header>
-                    I am a graduate and not a student. Can I still get the
-                    certification ?
+                    What is Revive ?
                   </Accordion.Header>
                   <Accordion.Body>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed

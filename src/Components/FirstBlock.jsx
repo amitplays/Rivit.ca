@@ -9,17 +9,19 @@ import blogImg2 from "../assets/blogImg2.png";
 import tik from "../assets/tik.png";
 import blogImg3 from "../assets/blogImg3.png";
 import migrateMe from "../assets/mm.png";
+import { useHistory } from "react-router-dom";
 import clients from "../assets/clients.png";
 
 import { Button, ListGroup, Row, Col } from "react-bootstrap";
 
 export default function FirstBlock() {
+  const history = useHistory();
   return (
     <>
       {/* First Row */}
       <div className="parentOfOneCard">
         <div className="cardStyles fullWidthHomeCard">
-          <Row style={{ paddingLeft: 13, margin: "80px 0px" }}>
+          <Row style={{ paddingLeft: 13, margin: "50px 0px 10px 0px" }}>
             <Col sm={8}>
               <Fade left>
                 <div
@@ -85,7 +87,12 @@ export default function FirstBlock() {
                     Eliminate Notes Domino Once and For All.
                   </p>
 
-                  <Button className="btnColor">Learn More</Button>
+                  <Button
+                    onClick={() => history.push("/workshops")}
+                    className="btnColor"
+                  >
+                    Learn More
+                  </Button>
                 </div>
               </Fade>
             </div>
@@ -109,7 +116,12 @@ export default function FirstBlock() {
                     Domino applications beyond the desktop, directly to where
                     your users need to be.
                   </p>
-                  <Button className="btnColor">Learn More</Button>
+                  <Button
+                    className="btnColor"
+                    onClick={() => history.push("/hcldomino")}
+                  >
+                    Learn More
+                  </Button>
                 </div>
               </Fade>
             </div>
@@ -128,7 +140,11 @@ export default function FirstBlock() {
                     Unique requirements sometimes call for a unique approach. We
                     love to think outside the box!
                   </p>
-                  <Button className="btnColor" variant="outline-light">
+                  <Button
+                    onClick={() => history.push("/customapp")}
+                    className="btnColor"
+                    variant="outline-light"
+                  >
                     Contact Us
                   </Button>
                 </div>

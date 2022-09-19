@@ -9,6 +9,8 @@ import Faq from "./Components/Faq";
 import RivitingInsights from "./Components/RivitingInsights";
 import Workshops from "./Components/Workshops";
 import Careers from "./Components/Careers";
+import HCL_Domino from "./Components/HCL_Domino";
+import CustomApp from "./Components/CustomApp";
 import StudentPortal from "./StudentPortal/StudentPortal";
 import LoginSignup from "./StudentPortal/LoginSignup";
 import Footer from "./Components/Footer";
@@ -27,6 +29,8 @@ function App() {
           <Route path="/rivitingInsights" component={RivitingInsights}></Route>
           <Route path="/workshops" component={Workshops}></Route>
           <Route path="/careers" component={Careers}></Route>
+          <Route path="/hcldomino" component={HCL_Domino}></Route>
+          <Route path="/customapp" component={CustomApp}></Route>
         </Switch>
         <Slide bottom>
           <Footer />

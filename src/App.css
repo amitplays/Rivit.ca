@@ -636,6 +636,10 @@ html {
   flex-wrap: wrap;
 }
 
+.CustomTwoCardRow .list-group-item {
+  background-color: transparent;
+}
+
 .clientImage {
   display: block;
   align-self: center;
@@ -655,6 +659,11 @@ html {
   font-size: 50px;
 }
 
+.nopaddingHeading {
+  padding: 10px 60px 30px 60px;
+  text-align: center;
+}
+
 @media only screen and (max-width: 1150px) {
   .homepageCardCol,
   .homepageCardColLeft,
@@ -662,10 +671,16 @@ html {
     display: flex;
     justify-content: space-around;
   }
+
+  .nopaddingHeading {
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+  }
   /* increasing vh for phone */
   #root,
   body {
     height: 120vh;
+    width: 100vw;
   }
 
   .headingFont {
@@ -679,6 +694,15 @@ html {
   .clientImage {
     max-width: 100%;
     padding: 5px;
+  }
+
+  /* Long width image */
+
+  .longWidthImage {
+    display: block;
+    width: 300px;
+    max-width: 300px;
+    padding-top: 10px;
   }
 }
 
@@ -706,4 +730,11 @@ html {
 .mmTik {
   max-width: 15px;
   margin-right: 10px;
+}
+
+.longWidthImage {
+  display: block;
+  width: "388px";
+  max-width: "388px";
+  padding-top: 10px;
 }
