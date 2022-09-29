@@ -7,8 +7,11 @@ import blogImg2 from "../assets/blogImg2.png";
 import blogImg3 from "../assets/blogImg3.png";
 import blogIcon from "../assets/blogIcon.jpg";
 import discussion from "../assets/discussion.png";
+import { useHistory } from "react-router-dom";
 
 export default function RivitingInsights() {
+  const history = useHistory();
+
   return (
     <div>
       <div className="workshopsBody">
@@ -72,7 +75,11 @@ export default function RivitingInsights() {
                       Understanding the problem
                     </h5>
                     <p>Is Low-Code/No-Code The Best Platform for You?</p>
-                    <Button variant="outline-primary" size="sm">
+                    <Button
+                      onClick={() => history.push("/rivitblog")}
+                      variant="outline-primary"
+                      size="sm"
+                    >
                       Read More
                     </Button>
                   </div>
@@ -90,7 +97,11 @@ export default function RivitingInsights() {
                     />
                     <h5 className="subsCardHeading">A decade of Excellence</h5>
                     <p>Rivit's Dcom application is Celebrating 10 Years !</p>
-                    <Button variant="outline-warning" size="sm">
+                    <Button
+                      onClick={() => history.push("/rivitblog")}
+                      variant="outline-warning"
+                      size="sm"
+                    >
                       Read More
                     </Button>
                   </div>
@@ -109,7 +120,11 @@ export default function RivitingInsights() {
                     />
                     <h5 className="subsCardHeading">A decade of Excellence</h5>
                     <p>Rivit's Dcom application is Celebrating 10 Years !</p>
-                    <Button variant="outline-success" size="sm">
+                    <Button
+                      onClick={() => history.push("/rivitblog")}
+                      variant="outline-success"
+                      size="sm"
+                    >
                       Read More
                     </Button>
                   </div>
@@ -132,7 +147,11 @@ export default function RivitingInsights() {
                       Understanding the problem
                     </h5>
                     <p>Is Low-Code/No-Code The Best Platform for You?</p>
-                    <Button variant="outline-primary" size="sm">
+                    <Button
+                      onClick={() => history.push("/rivitblog")}
+                      variant="outline-primary"
+                      size="sm"
+                    >
                       Read More
                     </Button>
                   </div>
@@ -150,7 +169,11 @@ export default function RivitingInsights() {
                     />
                     <h5 className="subsCardHeading">A decade of Excellence</h5>
                     <p>Rivit's Dcom application is Celebrating 10 Years !</p>
-                    <Button variant="outline-warning" size="sm">
+                    <Button
+                      onClick={() => history.push("/rivitblog")}
+                      variant="outline-warning"
+                      size="sm"
+                    >
                       Read More
                     </Button>
                   </div>
@@ -169,7 +192,11 @@ export default function RivitingInsights() {
                     />
                     <h5 className="subsCardHeading">A decade of Excellence</h5>
                     <p>Rivit's Dcom application is Celebrating 10 Years !</p>
-                    <Button variant="outline-success" size="sm">
+                    <Button
+                      onClick={() => history.push("/rivitblog")}
+                      variant="outline-success"
+                      size="sm"
+                    >
                       Read More
                     </Button>
                   </div>

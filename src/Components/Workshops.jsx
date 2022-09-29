@@ -3,7 +3,6 @@ import React from "react";
 import Fade from "react-reveal/Slide";
 import workBanner from "../assets/workBanner.png";
 import appAnal from "../assets/appAnal.png";
-import hcl from "../assets/HCL_Domino.png";
 import tik from "../assets/tik.png";
 import dcomBanner from "../assets/dcomBanner.png";
 import revive from "../assets/revive.png";
@@ -140,14 +139,6 @@ export default function Workshops() {
                                 <img alt="icon" src={tik} className="mmTik" />
                               </span>
                               Cloud & Mobile Ready
-                            </ListGroup.Item>
-                          </Fade>
-                          <Fade right>
-                            <ListGroup.Item>
-                              <span>
-                                <img alt="icon" src={tik} className="mmTik" />
-                              </span>
-                              Porta ac consectetur ac
                             </ListGroup.Item>
                           </Fade>
                         </ListGroup>
@@ -333,14 +324,6 @@ export default function Workshops() {
                                 <img alt="icon" src={tik} className="mmTik" />
                               </span>
                               Migration Decision Support
-                            </ListGroup.Item>
-                          </Fade>
-                          <Fade right>
-                            <ListGroup.Item>
-                              <span>
-                                <img alt="icon" src={tik} className="mmTik" />
-                              </span>
-                              Porta ac consectetur ac
                             </ListGroup.Item>
                           </Fade>
                         </ListGroup>

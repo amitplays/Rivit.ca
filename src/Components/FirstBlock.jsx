@@ -11,7 +11,6 @@ import blogImg3 from "../assets/blogImg3.png";
 import migrateMe from "../assets/mm.png";
 import { useHistory } from "react-router-dom";
 import clients from "../assets/clients.png";
-
 import { Button, ListGroup, Row, Col } from "react-bootstrap";
 
 export default function FirstBlock() {
@@ -43,7 +42,11 @@ export default function FirstBlock() {
                     learning and improvement to provide the best solutions to
                     clients.
                   </h5>
-                  <Button variant="light" className="ctaButton">
+                  <Button
+                    onClick={() => history.push("/contactus")}
+                    variant="light"
+                    className="ctaButton"
+                  >
                     Get Started
                   </Button>
                   <div>
@@ -204,13 +207,18 @@ export default function FirstBlock() {
                       maxWidth: "650px",
                     }}
                   >
-                    Revive is strategically compiled for the migration of
-                    complex Notes Domino applications.
+                    Rivit creates engaging and intuitive applications for the
+                    modern organization!
                     <br />
                     <br />
-                    Revive's proprietary migration utilities collect and convert
-                    the views, forms, code, data, and security, to recreate a
-                    modern enterprise application free of the original platform.
+                    Rivit Technology Partners specializes in all phases of the
+                    Application Lifecycle. For over 20 years organizations have
+                    turned to Rivit to build, modernize, and manage
+                    business-critical applications. Our successful practice
+                    ensures a structured methodology using industry-leading
+                    frameworks including SharePoint, Volt, and our own Revive
+                    solution for creating modern and open standard web and
+                    mobile applications.
                   </p>
                   <div className="mmListWrapper">
                     <ListGroup variant="flush">
@@ -236,14 +244,6 @@ export default function FirstBlock() {
                             <img alt="icon" src={tik} className="mmTik" />
                           </span>
                           Cloud & Mobile Ready
-                        </ListGroup.Item>
-                      </Fade>
-                      <Fade right>
-                        <ListGroup.Item>
-                          <span>
-                            <img alt="icon" src={tik} className="mmTik" />
-                          </span>
-                          Porta ac consectetur ac
                         </ListGroup.Item>
                       </Fade>
                     </ListGroup>
@@ -373,7 +373,11 @@ export default function FirstBlock() {
                   />
                   <h5 className="subsCardHeading">Understanding the problem</h5>
                   <p>Is Low-Code/No-Code The Best Platform for You?</p>
-                  <Button variant="outline-primary" size="sm">
+                  <Button
+                    onClick={() => history.push("/rivitingInsights")}
+                    variant="outline-primary"
+                    size="sm"
+                  >
                     Read More
                   </Button>
                 </div>
@@ -391,7 +395,11 @@ export default function FirstBlock() {
                   />
                   <h5 className="subsCardHeading">A decade of Excellence</h5>
                   <p>Rivit's Dcom application is Celebrating 10 Years !</p>
-                  <Button variant="outline-warning" size="sm">
+                  <Button
+                    onClick={() => history.push("/rivitingInsights")}
+                    variant="outline-primary"
+                    size="sm"
+                  >
                     Read More
                   </Button>
                 </div>
@@ -410,7 +418,11 @@ export default function FirstBlock() {
                   />
                   <h5 className="subsCardHeading">A decade of Excellence</h5>
                   <p>Rivit's Dcom application is Celebrating 10 Years !</p>
-                  <Button variant="outline-success" size="sm">
+                  <Button
+                    onClick={() => history.push("/rivitingInsights")}
+                    variant="outline-primary"
+                    size="sm"
+                  >
                     Read More
                   </Button>
                 </div>
