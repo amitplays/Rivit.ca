@@ -1,14 +1,14 @@
 import React from "react";
 import {
   Button,
-  Alert,
+  ListGroup,
   Row,
   Col,
   InputGroup,
   Tabs,
   Tab,
 } from "react-bootstrap";
-import { StudentForm, EmployerForm } from "./StudentForm";
+import { MigrationForm, EmployerForm } from "./MigrationForm";
 import faq2 from "../assets/contact.png";
 import cusApp from "../assets/cusApp.png";
 import migration from "../assets/migration.png";
@@ -16,8 +16,16 @@ import Fade from "react-reveal/Slide";
 import fbIcon2 from "../assets/fbLogo.png";
 import messIcon from "../assets/mesIcon2.png";
 import instaIcon from "../assets/instaIcon.png";
+import support from "../assets/support.png";
+import cell from "../assets/cell.png";
+import address from "../assets/address.png";
+import mail from "../assets/email.png";
 
 export default function ContactUs() {
+  const mailtoinfo = "mailto:info@rivit.ca?subject=SendMail&body=Description";
+  const mailtosupport =
+    "mailto:support@rivit.ca?subject=SendMail&body=Description";
+
   return (
     <>
       <div className="contactUsBody">
@@ -97,72 +105,72 @@ export default function ContactUs() {
           </Row>
         </div>
         <Fade bottom>
-          <Tabs
-            defaultActiveKey="MigrationServices"
-            id="uncontrolled-tab-example"
-            className="mb-3 ContactTabStyle"
-            variant="pills"
-          >
-            {/* -------- Migration Tab ------- */}
-            <Tab eventKey="MigrationServices" title="Migration Services">
-              <div className="cardStyles fullWidthContactCard">
+          <div className="cardStyles fullWidthContactCard">
+            <div
+              style={{
+                textAlign: "center",
+                padding: "30px 60px",
+              }}
+            >
+              <h1>Call or Email Rivit Directly</h1>
+            </div>
+            <div
+              style={{
+                display: "flex",
+                flexWrap: "wrap",
+                justifyContent: "space-evenly",
+              }}
+            >
+              <div className="fourCardStyleNoBorder">
                 <div
                   style={{
-                    display: "flex",
-                    flexWrap: "wrap",
-                    justifyContent: "space-evenly",
+                    display: "block",
+                    margin: "auto",
+                    maxWidth: "500px",
+                    paddingTop: "10px",
                   }}
                 >
-                  <div className="Illustration">
-                    <div
-                      style={{
-                        display: "block",
-                        margin: "auto",
-                        maxWidth: "300px",
-                        paddingTop: "10px",
-                      }}
-                    >
-                      <img src={migration} alt="speed" className="CardImages" />
-                    </div>
-                  </div>
-                  <div className="formParent">
-                    <StudentForm />
-                  </div>
+                  <ListGroup variant="flush">
+                    <ListGroup.Item>
+                      {" "}
+                      <h5>
+                        <a className="contactUsItems" href={mailtoinfo}>
+                          <img alt="icon" src={mail} className="mmTik" />
+                          info@rivit.ca
+                        </a>
+                      </h5>{" "}
+                    </ListGroup.Item>
+                    <ListGroup.Item>
+                      <h5>
+                        <a className="contactUsItems" href={mailtosupport}>
+                          <img alt="icon" src={support} className="mmTik" />
+                          support@rivit.ca
+                        </a>
+                      </h5>
+                    </ListGroup.Item>
+                    <ListGroup.Item>
+                      <h5>
+                        <a className="contactUsItems" href="tel:+9971863733">
+                          <img alt="icon" src={cell} className="mmTik" />
+                          +1-647.930.1711
+                        </a>
+                      </h5>
+                    </ListGroup.Item>
+                    <ListGroup.Item>
+                      <h5>
+                        <img alt="icon" src={address} className="mmTik" />
+                        81 – 8 Zenway Blvd. Suite 200 Woodbridge, Ontario,
+                        Canada L4H 0S5
+                      </h5>
+                    </ListGroup.Item>
+                  </ListGroup>
                 </div>
               </div>
-            </Tab>
-
-            {/* -------- Custom App Tab ------- */}
-            <Tab eventKey="CustomApp" title="Custom App">
-              <div className="parentOfOneCard">
-                <div className="empContactUsCard fullWidthContactCard">
-                  <div
-                    style={{
-                      display: "flex",
-                      flexWrap: "wrap",
-                      justifyContent: "space-evenly",
-                    }}
-                  >
-                    <div className="formParent">
-                      <EmployerForm />
-                    </div>
-                    <div className="Illustration">
-                      <div
-                        style={{
-                          display: "block",
-                          margin: "auto",
-                          maxWidth: "300px",
-                          paddingTop: "10px",
-                        }}
-                      >
-                        <img src={cusApp} alt="speed" className="CardImages" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
+              <div className="formParent">
+                <MigrationForm />
               </div>
-            </Tab>
-          </Tabs>
+            </div>
+          </div>
         </Fade>
       </div>
     </>

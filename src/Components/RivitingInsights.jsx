@@ -63,7 +63,7 @@ export default function RivitingInsights() {
             <div className="CustomTwoCardRow">
               <Fade bottom>
                 <div className="CustomCard">
-                  <div className="fourCardStyleNoBorder">
+                  <div className="rivitBlogCard">
                     <img
                       className="CardImageBlog"
                       height="158px"
@@ -87,7 +87,7 @@ export default function RivitingInsights() {
               </Fade>
               <Fade bottom>
                 <div className="CustomCard">
-                  <div className="fourCardStyleNoBorder">
+                  <div className="rivitBlogCard">
                     <img
                       className="CardImageBlog"
                       height="158px"
@@ -110,7 +110,7 @@ export default function RivitingInsights() {
 
               <Fade bottom>
                 <div className="CustomCard">
-                  <div className="fourCardStyleNoBorder">
+                  <div className="rivitBlogCard">
                     <img
                       className="CardImageBlog"
                       height="158px"
@@ -135,7 +135,7 @@ export default function RivitingInsights() {
             <div className="CustomTwoCardRow">
               <Fade bottom>
                 <div className="CustomCard">
-                  <div className="fourCardStyleNoBorder">
+                  <div className="rivitBlogCard">
                     <img
                       className="CardImageBlog"
                       height="158px"
@@ -159,7 +159,7 @@ export default function RivitingInsights() {
               </Fade>
               <Fade bottom>
                 <div className="CustomCard">
-                  <div className="fourCardStyleNoBorder">
+                  <div className="rivitBlogCard">
                     <img
                       className="CardImageBlog"
                       height="158px"
@@ -182,7 +182,7 @@ export default function RivitingInsights() {
 
               <Fade bottom>
                 <div className="CustomCard">
-                  <div className="fourCardStyleNoBorder">
+                  <div className="rivitBlogCard">
                     <img
                       className="CardImageBlog"
                       height="158px"

@@ -2,7 +2,7 @@
 body {
   background-color: #083258;
   /* background-image: linear-gradient(rgba(245, 215, 188, 0.116), #f7e1cfb4); */
-  height: 70vh;
+  height: 75vh;
   color: white !important;
 }
 
@@ -341,7 +341,7 @@ html {
   box-shadow: 3px 5px 8px #857f7f6b;
 }
 
-.fourCardStyleNoBorder {
+.noBorder {
   padding: 0px 20px 20px 20px;
   display: flex;
   flex-direction: column;
@@ -353,7 +353,35 @@ html {
   /* background-color: rgba(255, 255, 255, 0.541); */
   background-color: rgb(255, 255, 255);
   color: #000;
-  /* box-shadow: 5px 10px 16px #857f7f6b; */
+}
+
+.rivitBlogCard {
+  padding: 0px 20px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  border-radius: 18px;
+  width: 320px;
+  justify-content: center;
+  box-shadow: 5px 10px 16px #857f7f6b;
+  background-color: rgb(255, 255, 255);
+  color: #000;
+}
+
+.fourCardStyleNoBorder {
+  padding: 0px 20px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  border-radius: 18px;
+  width: 300px;
+  justify-content: center;
+  /* background-color: rgba(255, 255, 255, 0.541); */
+  background-color: rgb(255, 255, 255);
+  color: #000;
+  box-shadow: 5px 10px 16px #857f7f6b;
 }
 
 .fourCardStyle:hover {
@@ -644,7 +672,7 @@ html {
   display: block;
   align-self: center;
   padding: 5px;
-  max-width: 69%;
+  width: 100%;
 }
 
 .CustomCard {
@@ -680,6 +708,11 @@ html {
   color: #1b578e;
 }
 
+.longWidthImage {
+  display: block;
+  width: 380px;
+  padding-top: 10px;
+}
 @media only screen and (max-width: 1150px) {
   .homepageCardCol,
   .homepageCardColLeft,
@@ -716,8 +749,7 @@ html {
 
   .longWidthImage {
     display: block;
-    width: 300px;
-    max-width: 300px;
+    width: 100%;
     padding-top: 10px;
   }
 }
@@ -744,13 +776,18 @@ html {
 }
 
 .mmTik {
-  max-width: 15px;
-  margin-right: 10px;
+  max-width: 24px;
+  margin-right: 20px;
+  margin-bottom: 5px;
 }
 
-.longWidthImage {
-  display: block;
-  width: "388px";
-  max-width: "388px";
-  padding-top: 10px;
+.contactUsItems {
+  text-decoration: none;
+  color: #000000;
+}
+
+.contactUsItems:hover {
+  color: #ac5e00 !important;
+  transform: scale(1.1);
+  font-size: 22px;
 }

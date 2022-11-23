@@ -9,7 +9,6 @@ import Faq from "./Components/Faq";
 import RivitingInsights from "./Components/RivitingInsights";
 import RivitBlog from "./Components/RivitBlog";
 import Revive from "./Components/Revive";
-
 import Workshops from "./Components/Workshops";
 import Careers from "./Components/Careers";
 import HCL_Domino from "./Components/HCL_Domino";

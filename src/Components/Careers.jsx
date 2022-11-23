@@ -9,6 +9,11 @@ import faq from "../assets/suitcase.png";
 import tik from "../assets/tik.png";
 import frontEnd from "../assets/frontEnd.png";
 export default function Careers() {
+
+
+  
+
+
   return (
     <div>
       <div className="workshopsBody">

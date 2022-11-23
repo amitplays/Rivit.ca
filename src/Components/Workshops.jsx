@@ -3,10 +3,14 @@ import React from "react";
 import Fade from "react-reveal/Slide";
 import workBanner from "../assets/workBanner.png";
 import appAnal from "../assets/appAnal.png";
+import hcl from "../assets/HCL_Domino.png";
 import tik from "../assets/tik.png";
 import dcomBanner from "../assets/dcomBanner.png";
 import revive from "../assets/revive.png";
+import { useHistory } from "react-router-dom";
+
 export default function Workshops() {
+  const history = useHistory();
   return (
     <div className="faqBody">
       <div className="cardStyles fullWidthHomeCard">
@@ -95,12 +99,12 @@ export default function Workshops() {
                 <div className="CustomCard me">
                   <Fade right>
                     <div
-                      className="fourCardStyleNoBorder "
+                      className="noBorder"
                       style={{
                         width: "100%",
                       }}
                     >
-                      <h1 className="subsCardHeading">Migrate and Morderize</h1>
+                      <h1 className="subsCardHeading">Migrate and Modernize</h1>
                       <p
                         style={{
                           maxWidth: "650px",
@@ -117,33 +121,31 @@ export default function Workshops() {
                       </p>
                       <div className="mmListWrapper">
                         <ListGroup variant="flush">
-                          <Fade right>
-                            <ListGroup.Item>
-                              <span>
-                                <img alt="icon" src={tik} className="mmTik" />
-                              </span>
-                              Comprehensive Migration Utilities
-                            </ListGroup.Item>
-                          </Fade>
-                          <Fade right>
-                            <ListGroup.Item>
-                              <span>
-                                <img alt="icon" src={tik} className="mmTik" />
-                              </span>
-                              Standardized Technology Stack
-                            </ListGroup.Item>
-                          </Fade>
-                          <Fade right>
-                            <ListGroup.Item>
-                              <span>
-                                <img alt="icon" src={tik} className="mmTik" />
-                              </span>
-                              Cloud & Mobile Ready
-                            </ListGroup.Item>
-                          </Fade>
+                          <ListGroup.Item>
+                            <span>
+                              <img alt="icon" src={tik} className="mmTik" />
+                            </span>
+                            Comprehensive Migration Utilities
+                          </ListGroup.Item>
+                          <ListGroup.Item>
+                            <span>
+                              <img alt="icon" src={tik} className="mmTik" />
+                            </span>
+                            Standardized Technology Stack
+                          </ListGroup.Item>
+                          <ListGroup.Item>
+                            <span>
+                              <img alt="icon" src={tik} className="mmTik" />
+                            </span>
+                            Cloud & Mobile Ready
+                          </ListGroup.Item>
                         </ListGroup>
                       </div>
-                      <Button variant="light" className="ctaButton">
+                      <Button
+                        onClick={() => history.push("/revive")}
+                        variant="light"
+                        className="ctaButton"
+                      >
                         Get Started
                       </Button>
                     </div>
@@ -159,70 +161,66 @@ export default function Workshops() {
             >
               <Col sm={7}>
                 <div className="CustomCard me">
-                  <div
-                    className="fourCardStyleNoBorder "
-                    style={{
-                      width: "100%",
-                    }}
-                  >
-                    <h1 className="subsCardHeading">Application Archiving</h1>
-                    <p
+                  <Fade left>
+                    <div
+                      className="noBorder"
                       style={{
-                        maxWidth: "650px",
+                        width: "100%",
                       }}
                     >
-                      Dcom is an Enterprise Application Archiving solution that
-                      preserves access to legacy Domino application databases
-                      completely independent of HCL Notes Domino.
-                      <br />
-                      <br />
-                      Dcom transitions Domino applications to web-based XML
-                      archives, converts documents to pdf and maintains the
-                      original attachments.
-                    </p>
-                    <div className="mmListWrapper">
-                      <ListGroup variant="flush">
-                        <Fade right>
+                      <h1 className="subsCardHeading">Application Archiving</h1>
+                      <p
+                        style={{
+                          maxWidth: "650px",
+                        }}
+                      >
+                        Dcom is an Enterprise Application Archiving solution
+                        that preserves access to legacy Domino application
+                        databases completely independent of HCL Notes Domino.
+                        <br />
+                        <br />
+                        Dcom transitions Domino applications to web-based XML
+                        archives, converts documents to pdf and maintains the
+                        original attachments.
+                      </p>
+                      <div className="mmListWrapper">
+                        <ListGroup variant="flush">
                           <ListGroup.Item>
                             <span>
                               <img alt="icon" src={tik} className="mmTik" />
                             </span>
                             Easy-to-Use for End-Users
                           </ListGroup.Item>
-                        </Fade>
-                        <Fade right>
                           <ListGroup.Item>
                             <span>
                               <img alt="icon" src={tik} className="mmTik" />
                             </span>
                             Simple Archiving Process
                           </ListGroup.Item>
-                        </Fade>
-                        <Fade right>
                           <ListGroup.Item>
                             <span>
                               <img alt="icon" src={tik} className="mmTik" />
                             </span>
                             Full Security & Access Controls
                           </ListGroup.Item>
-                        </Fade>
-                      </ListGroup>
+                        </ListGroup>
+                      </div>
+                      <Button variant="light" className="ctaButton">
+                        Get Started
+                      </Button>
                     </div>
-                    <Button variant="light" className="ctaButton">
-                      Get Started
-                    </Button>
-                  </div>
+                  </Fade>
                 </div>
               </Col>
               <Col sm={5}>
-                <div
-                  className="CustomCard"
-                  style={{
-                    display: "flex",
-                    justifyContent: "center",
-                  }}
-                >
-                  <Fade right>
+                <Fade right>
+                  <div
+                    className="CustomCard"
+                    style={{
+                      display: "flex",
+                      justifyContent: "center",
+                    }}
+                  >
                     <div
                       style={{
                         maxWidth: "400px",
@@ -238,8 +236,8 @@ export default function Workshops() {
                         }}
                       />
                     </div>
-                  </Fade>
-                </div>
+                  </div>
+                </Fade>
               </Col>
             </Row>
 
@@ -280,7 +278,7 @@ export default function Workshops() {
                 <div className="CustomCard me">
                   <Fade right>
                     <div
-                      className="fourCardStyleNoBorder "
+                      className="noBorder"
                       style={{
                         width: "100%",
                       }}
@@ -302,30 +300,30 @@ export default function Workshops() {
                       </p>
                       <div className="mmListWrapper">
                         <ListGroup variant="flush">
-                          <Fade right>
-                            <ListGroup.Item>
-                              <span>
-                                <img alt="icon" src={tik} className="mmTik" />
-                              </span>
-                              Application Usage Statistics
-                            </ListGroup.Item>
-                          </Fade>
-                          <Fade right>
-                            <ListGroup.Item>
-                              <span>
-                                <img alt="icon" src={tik} className="mmTik" />
-                              </span>
-                              Application Complexity Analysis
-                            </ListGroup.Item>
-                          </Fade>
-                          <Fade right>
-                            <ListGroup.Item>
-                              <span>
-                                <img alt="icon" src={tik} className="mmTik" />
-                              </span>
-                              Migration Decision Support
-                            </ListGroup.Item>
-                          </Fade>
+                          <ListGroup.Item>
+                            <span>
+                              <img alt="icon" src={tik} className="mmTik" />
+                            </span>
+                            Application Usage Statistics
+                          </ListGroup.Item>
+                          <ListGroup.Item>
+                            <span>
+                              <img alt="icon" src={tik} className="mmTik" />
+                            </span>
+                            Application Complexity Analysis
+                          </ListGroup.Item>
+                          <ListGroup.Item>
+                            <span>
+                              <img alt="icon" src={tik} className="mmTik" />
+                            </span>
+                            Migration Decision Support
+                          </ListGroup.Item>
+                          <ListGroup.Item>
+                            <span>
+                              <img alt="icon" src={tik} className="mmTik" />
+                            </span>
+                            Porta ac consectetur ac
+                          </ListGroup.Item>
                         </ListGroup>
                       </div>
                       <Button variant="light" className="ctaButton">

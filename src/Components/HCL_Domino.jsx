@@ -61,7 +61,7 @@ export default function HCL_Domino() {
               }}
             >
               <div>
-                <Fade right>
+                <Fade bottom>
                   <div
                     style={{
                       width: "100%",
@@ -90,7 +90,6 @@ export default function HCL_Domino() {
                     <p>
                       Your Domino Apps Everywhere
                       <br />
-                      <br />
                       HCL Nomad brings the power of HCL Domino applications
                       beyond the desktop, directly to where your users need to
                       be. Deliver the same applications, unparalleled security,
@@ -98,90 +97,66 @@ export default function HCL_Domino() {
                     </p>
                     <div className="mmListWrapper">
                       <ListGroup variant="flush">
-                        <Fade right>
-                          <ListGroup.Item>
-                            <span>
-                              <img alt="icon" src={tik} className="mmTik" />
-                            </span>
-                            Domino applications can be directly accessed online
-                            or can be replicated to your mobile device for
-                            offline access without modification.
-                          </ListGroup.Item>
-                        </Fade>
-                        <Fade right>
-                          <ListGroup.Item>
-                            <span>
-                              <img alt="icon" src={tik} className="mmTik" />
-                            </span>
-                            No longer do you have to worry about maintaining the
-                            desktop Notes clients.
-                          </ListGroup.Item>
-                        </Fade>
-                        <Fade right>
-                          <ListGroup.Item>
-                            <span>
-                              <img alt="icon" src={tik} className="mmTik" />
-                            </span>
-                            Information is locally encrypted for securing your
-                            data.
-                          </ListGroup.Item>
-                        </Fade>
-                        <Fade right>
-                          <ListGroup.Item>
-                            <span>
-                              <img alt="icon" src={tik} className="mmTik" />
-                            </span>
-                            All original business logic of your applications
-                            functions on the mobile device, including
-                            LotusScript, complex forms, and buttons.
-                          </ListGroup.Item>
-                        </Fade>
-                        <Fade right>
-                          <ListGroup.Item>
-                            <span>
-                              <img alt="icon" src={tik} className="mmTik" />
-                            </span>
-                            Utilize mobile device functionality to augment your
-                            workflow. Access cameras, photos, and files on your
-                            device, add location information, and more{" "}
-                          </ListGroup.Item>
-                        </Fade>
+                        <ListGroup.Item>
+                          <span>
+                            <img alt="icon" src={tik} className="mmTik" />
+                          </span>
+                          Domino applications can be directly accessed online or
+                          can be replicated to your mobile device for offline
+                          access without modification.
+                        </ListGroup.Item>
+                        <ListGroup.Item>
+                          <span>
+                            <img alt="icon" src={tik} className="mmTik" />
+                          </span>
+                          No longer do you have to worry about maintaining the
+                          desktop Notes clients.
+                        </ListGroup.Item>
+                        <ListGroup.Item>
+                          <span>
+                            <img alt="icon" src={tik} className="mmTik" />
+                          </span>
+                          Information is locally encrypted for securing your
+                          data.
+                        </ListGroup.Item>
+                        <ListGroup.Item>
+                          <span>
+                            <img alt="icon" src={tik} className="mmTik" />
+                          </span>
+                          All original business logic of your applications
+                          functions on the mobile device, including LotusScript,
+                          complex forms, and buttons.
+                        </ListGroup.Item>
+                        <ListGroup.Item>
+                          <span>
+                            <img alt="icon" src={tik} className="mmTik" />
+                          </span>
+                          Utilize mobile device functionality to augment your
+                          workflow. Access cameras, photos, and files on your
+                          device, add location information, and more{" "}
+                        </ListGroup.Item>
                       </ListGroup>
                     </div>
-                    <br />
-                    <p
-                      style={{
-                        maxWidth: "650px",
-                      }}
-                    >
-                      Unleash the Power of Your Desktop Domino Application!
-                    </p>
                     <div className="mmListWrapper">
                       <ListGroup variant="flush">
-                        <Fade right>
-                          <ListGroup.Item>
-                            <span>
-                              <img alt="icon" src={tik} className="mmTik" />
-                            </span>
-                            Mobile Friendly
-                          </ListGroup.Item>
-                        </Fade>
-                        <Fade right>
-                          <ListGroup.Item>
-                            <span>
-                              <img alt="icon" src={tik} className="mmTik" />
-                            </span>
-                            Local Encryption
-                          </ListGroup.Item>
-                        </Fade>
-                        <Fade right>
-                          <ListGroup.Item>
-                            <span>
-                              <img alt="icon" src={tik} className="mmTik" />
-                            </span>
-                            Enhanced Functionality
-                          </ListGroup.Item>
-                        </Fade>
+                        <ListGroup.Item>
+                          <span>
+                            <img alt="icon" src={tik} className="mmTik" />
+                          </span>
+                          Mobile Friendly
+                        </ListGroup.Item>
+                        <ListGroup.Item>
+                          <span>
+                            <img alt="icon" src={tik} className="mmTik" />
+                          </span>
+                          Local Encryption
+                        </ListGroup.Item>
+                        <ListGroup.Item>
+                          <span>
+                            <img alt="icon" src={tik} className="mmTik" />
+                          </span>
+                          Enhanced Functionality
+                        </ListGroup.Item>
                       </ListGroup>
                     </div>
                     <Button variant="light" className="ctaButton">
@@ -198,7 +173,7 @@ export default function HCL_Domino() {
               }}
             >
               <div>
-                <Fade right>
+                <Fade bottom>
                   <div
                     style={{
                       width: "100%",
@@ -238,60 +213,48 @@ export default function HCL_Domino() {
                     </p>
                     <div className="mmListWrapper">
                       <ListGroup variant="flush">
-                        <Fade right>
-                          <ListGroup.Item>
-                            <span>
-                              <img alt="icon" src={tik} className="mmTik" />
-                            </span>
-                            Extend and enhance the value of your Domino apps by
-                            building new apps that interact with their data and
-                            agents.
-                          </ListGroup.Item>
-                        </Fade>
-                        <Fade right>
-                          <ListGroup.Item>
-                            <span>
-                              <img alt="icon" src={tik} className="mmTik" />
-                            </span>
-                            New HCL Link capabilities let IT define and manage
-                            connections for Domino Volt designers to build into
-                            their apps. Examples include SAP, Salesforce,
-                            ServiceNow, REST, ODATA, JDBC and many more!
-                          </ListGroup.Item>
-                        </Fade>
-                        <Fade right>
-                          <ListGroup.Item>
-                            <span>
-                              <img alt="icon" src={tik} className="mmTik" />
-                            </span>
-                            Define document workflows down to the user level to
-                            determine who gets assigned, notified, what they see
-                            and can do, what connections are called and who get
-                            alerts when the process is complete.
-                          </ListGroup.Item>
-                        </Fade>
-                        <Fade right>
-                          <ListGroup.Item>
-                            <span>
-                              <img alt="icon" src={tik} className="mmTik" />
-                            </span>
-                            IT admin controls include defining who can create
-                            and use apps, what types and sizes of files can be
-                            added, which services and integrations are allowed,
-                            as well as the ability to sandbox the use of
-                            JavaScript.
-                          </ListGroup.Item>
-                        </Fade>
-
-                        <Fade right>
-                          <ListGroup.Item>
-                            <span>
-                              <img alt="icon" src={tik} className="mmTik" />
-                            </span>
-                            The style editor lets business developers customize
-                            the look of their apps without having to know CSS.
-                          </ListGroup.Item>
-                        </Fade>
+                        <ListGroup.Item>
+                          <span>
+                            <img alt="icon" src={tik} className="mmTik" />
+                          </span>
+                          Extend and enhance the value of your Domino apps by
+                          building new apps that interact with their data and
+                          agents.
+                        </ListGroup.Item>
+                        <ListGroup.Item>
+                          <span>
+                            <img alt="icon" src={tik} className="mmTik" />
+                          </span>
+                          New HCL Link capabilities let IT define and manage
+                          connections for Domino Volt designers to build into
+                          their apps. Examples include SAP, Salesforce,
+                          ServiceNow, REST, ODATA, JDBC and many more!
+                        </ListGroup.Item>
+                        <ListGroup.Item>
+                          <span>
+                            <img alt="icon" src={tik} className="mmTik" />
+                          </span>
+                          Define document workflows down to the user level to
+                          determine who gets assigned, notified, what they see
+                          and can do, what connections are called and who get
+                          alerts when the process is complete.
+                        </ListGroup.Item>
+                        <ListGroup.Item>
+                          <span>
+                            <img alt="icon" src={tik} className="mmTik" />
+                          </span>
+                          IT admin controls include defining who can create and
+                          use apps, what types and sizes of files can be added,
+                          which services and integrations are allowed, as well
+                          as the ability to sandbox the use of JavaScript.
+                        </ListGroup.Item>
+                        <ListGroup.Item>
+                          <span>
+                            <img alt="icon" src={tik} className="mmTik" />
+                          </span>
+                          The style editor lets business developers customize
+                          the look of their apps without having to know CSS.
+                        </ListGroup.Item>
                       </ListGroup>
                     </div>
                     <br />
@@ -304,30 +267,24 @@ export default function HCL_Domino() {
                     </p>
                     <div className="mmListWrapper">
                       <ListGroup variant="flush">
-                        <Fade right>
                           <ListGroup.Item>
                             <span>
                               <img alt="icon" src={tik} className="mmTik" />
                             </span>
                             Conversion Optimization
                           </ListGroup.Item>
-                        </Fade>
-                        <Fade right>
                           <ListGroup.Item>
                             <span>
                               <img alt="icon" src={tik} className="mmTik" />
                             </span>
                             Document Security
                           </ListGroup.Item>
-                        </Fade>
-                        <Fade right>
                           <ListGroup.Item>
                             <span>
                               <img alt="icon" src={tik} className="mmTik" />
                             </span>
                             Embedded Attachments & Enhanced Security
-                          </ListGroup.Item>
-                        </Fade>
+                          </ListGroup.Item> 
                       </ListGroup>
                     </div>
                     <Button variant="light" className="ctaButton">

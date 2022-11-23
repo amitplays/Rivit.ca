@@ -195,7 +195,7 @@ export default function FirstBlock() {
             <div className="CustomCard me">
               <Fade right>
                 <div
-                  className="fourCardStyleNoBorder cardStyles"
+                  className="noBorder cardStyles"
                   style={{
                     width: "100%",
                     textAlign: "left",
@@ -207,18 +207,13 @@ export default function FirstBlock() {
                       maxWidth: "650px",
                     }}
                   >
-                    Rivit creates engaging and intuitive applications for the
-                    modern organization!
+                    Revive is strategically compiled for the migration of
+                    complex Notes Domino applications.
                     <br />
                     <br />
-                    Rivit Technology Partners specializes in all phases of the
-                    Application Lifecycle. For over 20 years organizations have
-                    turned to Rivit to build, modernize, and manage
-                    business-critical applications. Our successful practice
-                    ensures a structured methodology using industry-leading
-                    frameworks including SharePoint, Volt, and our own Revive
-                    solution for creating modern and open standard web and
-                    mobile applications.
+                    Revive's proprietary migration utilities collect and convert
+                    the views, forms, code, data, and security, to recreate a
+                    modern enterprise application free of the original platform.
                   </p>
                   <div className="mmListWrapper">
                     <ListGroup variant="flush">
@@ -286,7 +281,6 @@ export default function FirstBlock() {
         </div>
       </Fade>
       {/* Rivit By Numbers*/}
-
       <Fade bottom>
         <div
           className="fullWidthHomeCard"
@@ -363,7 +357,7 @@ export default function FirstBlock() {
           <div className="CustomTwoCardRow">
             <Fade bottom>
               <div className="CustomCard">
-                <div className="fourCardStyleNoBorder">
+                <div className="rivitBlogCard">
                   <img
                     className="CardImageBlog"
                     height="158px"
@@ -385,7 +379,7 @@ export default function FirstBlock() {
             </Fade>
             <Fade bottom>
               <div className="CustomCard">
-                <div className="fourCardStyleNoBorder">
+                <div className="rivitBlogCard">
                   <img
                     className="CardImageBlog"
                     height="158px"
@@ -408,7 +402,7 @@ export default function FirstBlock() {
 
             <Fade bottom>
               <div className="CustomCard">
-                <div className="fourCardStyleNoBorder">
+                <div className="rivitBlogCard">
                   <img
                     className="CardImageBlog"
                     height="158px"

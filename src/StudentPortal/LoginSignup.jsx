@@ -8,7 +8,7 @@ import {
   Tabs,
   Tab,
 } from "react-bootstrap";
-import { StudentForm, EmployerForm } from "../Components/StudentForm";
+import { MigrationForm, EmployerForm } from "../Components/MigrationForm";
 
 export default function LoginSignup(props) {
   return (
